@@ -9,8 +9,8 @@ const Project = () => {
   const filePath = config.text_path + 'bocchi_desc_1.txt';
   const desc1 = readFile(filePath);
   const projectData = {
-    title: 'Bocchi the Rock Desktop Extension',
-    explanation: 'Dino Bocchi appears on screen.',
+    title: 'Pixiv Scraper',
+    explanation: 'Occasionally Scrapes off Pixiv',
     tags: ['C#','.NET']
   };
 
