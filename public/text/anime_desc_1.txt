@@ -1,0 +1,1 @@
+Myanimelist recommendation is terrible. As such I sought to improve it a bit. After embedding animes, my initial KNN approach did not perform very well. I am looking into two towered recommenders now. 

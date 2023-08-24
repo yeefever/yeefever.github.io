@@ -14,9 +14,6 @@ const Header = () => {
           <Link href="/projects" legacyBehavior>
             <a className="hover:underline">Projects</a>
           </Link>
-          <Link href="#"legacyBehavior>
-            <a className="hover:underline">Contact</a>
-          </Link>
         </div>
       </div>
     </header>
