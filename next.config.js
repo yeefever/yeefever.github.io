@@ -2,5 +2,5 @@
 const nextConfig = {}
 
 module.exports = {
-    output: 'static'
+    output: "export"
 };
