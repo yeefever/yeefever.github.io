@@ -37,7 +37,7 @@ const projectsData = [
     imageSrc: '/images/event.png',
     description: 'Recommending Anime.',
     url: 'https://github.com/yeefever/#',
-    tags: ['NLP', 'ML'],
+    tags: ['C#', 'D#+'],
     finished: true
   },
   {
@@ -46,7 +46,7 @@ const projectsData = [
     imageSrc: '/images/mal.png',
     description: 'Facilitating event registration through discord.',
     url: 'https://github.com/yeefever/event-bot',
-    tags: ['C#', 'D#+'],
+    tags: ['NLP', 'ML'],
     finished: false
   },
 

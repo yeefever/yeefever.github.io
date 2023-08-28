@@ -3,14 +3,15 @@ import Footer from './footer';
 const LayoutBase = ({ children }) => {
   return (
     <>
-     <Header></Header>
-    <div className="bg-gray-100 min-h-screen">
 
-      <main className="p-4">
-        {children}
-      </main>
-    </div>
-    <Footer></Footer>
+<div className="bg-gray-100 min-h-screen flex flex-col">
+  <Header></Header>
+  <main className="p-4 flex-grow">
+    {children}
+  </main>
+  <Footer></Footer>
+</div>
+
     </>
   );
 };
