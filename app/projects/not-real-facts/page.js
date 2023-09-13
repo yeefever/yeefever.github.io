@@ -19,20 +19,20 @@ const Project = () => {
         <div className="bg-white rounded p-6 shadow w-1/4 mr-16">
           <h2 className="text-3xl font-semibold mb-1">{projectData.title}</h2>
           <a
-            href={'https://github.com/yeefever/'}
+            href={'https://github.com/yeefever/not-real-facts'}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-4 py-2 text-white bg-red-500 border border-red-500 rounded hover:bg-slate-600 hover:border-slate-600 mb-1"
           >
-            IN DEVELOPMENT
+            TO GIT REPO
           </a>
           <a
-            href={'https://www.youtube.com/watch?v=A6q3-ue4PNQ&ab_channel=Peternity'}
+            href={'https://not-real-facts.vercel.app/'}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-4 py-2 text-white bg-slate-800 border border-slate-800 rounded hover:bg-slate-600 hover:border-slate-600 mb-1"
           >
-            GO TO FOR CONTEXT
+            VERCEL SITE
           </a>
           <p className="text-3xl">{projectData.explanation}</p>
           <div className="mt-6">
