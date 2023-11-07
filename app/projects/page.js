@@ -35,7 +35,7 @@ const projectsData = [
     title: 'Event Bot',
     slug: 'event-bot',
     imageSrc: '/images/event.png',
-    description: 'Recommending Anime.',
+    description: 'Facilitating event registration through discord.',
     url: 'https://github.com/yeefever/#',
     tags: ['C#', 'D#+'],
     finished: true
@@ -44,10 +44,19 @@ const projectsData = [
     title: 'Anime Recommender',
     slug: 'anime-recommend',
     imageSrc: '/images/mal.png',
-    description: 'Facilitating event registration through discord.',
+    description: 'Recommending Anime.',
     url: 'https://github.com/yeefever/event-bot',
     tags: ['NLP', 'ML'],
     finished: false
+  },
+  {
+    title: 'Talking Bocchi',
+    slug: 'talking-bocchi',
+    imageSrc: '/images/talking.png',
+    description: 'Talking bocchi :)',
+    url: 'https://github.com/yeefever/#',
+    tags: ['JS'],
+    finished: true
   },
 
 ];
