@@ -4,15 +4,15 @@ import LayoutBase from '../components/layoutbase.js';
 
 
 const projectsData = [
-  {
-    title: 'Bocchi the Rock Desktop Extension',
-    slug: 'bocchi-desktop',
-    imageSrc: '/images/bocchi_peek_vert.jpg',
-    description: 'Dino Bocchi appears on screen.',
-    url: "https://github.com/yeefever/bocchi-desktop",
-    tags: ['C#', '.NET'],
-    finished: false
-  },
+  // {
+  //   title: 'Bocchi the Rock Desktop Extension',
+  //   slug: 'bocchi-desktop',
+  //   imageSrc: '/images/bocchi_peek_vert.jpg',
+  //   description: 'Dino Bocchi appears on screen.',
+  //   url: "https://github.com/yeefever/bocchi-desktop",
+  //   tags: ['C#', '.NET'],
+  //   finished: false
+  // },
   {
     title: 'Pixiv Scraper',
     slug: 'pixiv_scrape',
