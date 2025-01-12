@@ -11,9 +11,6 @@ const Header = () => {
               <AiOutlineHome />
             </a>
           </Link>
-          <Link href="/projects" legacyBehavior>
-            <a className="hover:underline">Projects</a>
-          </Link>
         </div>
       </div>
     </header>
