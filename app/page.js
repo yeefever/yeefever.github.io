@@ -63,18 +63,18 @@ const projectsData = [
     imageSrc: '/images/fox.png',
     description: 'RL agent for Smash Melee',
     url: 'https://github.com/RDLigeralde/MeleeGent',
-    tags: ['JS'],
+    tags: ['CV, RL'],
     finished: true,
   },
-  // {
-  //   title: 'Emotional Low-Resource TTS ',
-  //   slug: 'meleegent',
-  //   imageSrc: '/images/fox.png',
-  //   description: 'RL agent for Smash Melee',
-  //   url: 'https://github.com/RDLigeralde/MeleeGent',
-  //   tags: ['JS'],
-  //   finished: true,
-  // },
+  {
+    title: 'Emotional Low-Resource TTS ',
+    slug: 'emotional-tts',
+    imageSrc: '/images/talkingtom.png',
+    description: 'An Introductory Exploration into Emotional TTS',
+    url: 'https://github.com/yeefever/ling',
+    tags: ['TTS'],
+    finished: true,
+  }
 ];
 
 projectsData.sort((a, b) => a.title.localeCompare(b.title));
