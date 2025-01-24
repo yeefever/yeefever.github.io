@@ -7,12 +7,12 @@ import PdfEmbed from '../../components/PdfEmbed';
 
 const Project = () => {
     const router = useNavigation;
-    const filePath = 'public/text/smash_desc.txt';
+    const filePath = 'public/text/fuse_desc.txt';
     const desc1 = readFile(filePath);
     const projectData = {
-        title: 'Meleegent',
-        explanation: 'Vision-based RL agent for Super Smash Bros Melee',
-        tags: ['CV', 'RL']
+        title: 'FUSE',
+        explanation: 'Efficient Vision-Language Alignment for Retrieval and Depth Estimation',
+        tags: ['CV']
     };
 
     return (
@@ -21,7 +21,7 @@ const Project = () => {
                 <div className="bg-white rounded p-6 shadow w-1/4 mr-16">
                     <h2 className="text-3xl font-semibold mb-1">{projectData.title}</h2>
                     <a
-                        href={'https://github.com/RDLigeralde/MeleeGent'}
+                        href={'https://github.com/ethayu/VisionFineTuneFusion'}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block px-4 py-2 text-white bg-slate-500 border border-slate-500 rounded hover:bg-slate-600 hover:border-slate-600 mb-1"
@@ -45,7 +45,7 @@ const Project = () => {
                     </div>
                 </div>
 
-                <PdfEmbed pdfPath="/pdfs/Final_Project_Report.pdf" buttonText = 'Paper'/>
+                <PdfEmbed pdfPath="/pdfs/ESE5460_Project_Kevin_Aryan_Ethan.pdf" buttonText = 'Paper'/>
 
             </div>
         </LayoutBase>

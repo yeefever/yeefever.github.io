@@ -10,7 +10,6 @@ export const metadata = {
   applicationName: 'Kevin Liu\'s Personal Website',
   referrer: 'origin-when-cross-origin',
   keywords: ['Next.js', 'React', 'JavaScript', 'Website'],
-  colorScheme: 'light',
   creator: 'Kevin Liu',
   publisher: 'Github',
   formatDetection: {

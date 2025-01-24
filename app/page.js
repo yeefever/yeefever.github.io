@@ -28,7 +28,7 @@ const projectsData = [
     description: 'Fine-tuned T5 transformer to generate terrible facts.',
     url: 'https://github.com/yeefever/unreal_facts',
     tags: ['NLP'],
-    finished: false,
+    finished: true,
   },
   {
     title: 'Event Bot',
@@ -39,6 +39,15 @@ const projectsData = [
     tags: ['C#', 'D#+'],
     finished: true,
   },
+  // {
+  //   title: 'Sentiment Bot',
+  //   slug: 'sentimentbot',
+  //   imageSrc: '/images/event.png',
+  //   description: 'Facilitating event registration through discord.',
+  //   url: 'https://github.com/yeefever/#',
+  //   tags: ['C#', 'D#+'],
+  //   finished: true,
+  // },
   {
     title: 'Anime Recommender',
     slug: 'anime-recommend',
@@ -67,6 +76,15 @@ const projectsData = [
     finished: true,
   },
   {
+    title: 'FUSE',
+    slug: 'fuse',
+    imageSrc: '/images/fuse.png',
+    description: 'Aligning foundation model embedding spaces',
+    url: 'https://github.com/ethayu/VisionFineTuneFusion',
+    tags: ['CV'],
+    finished: true,
+  },
+  {
     title: 'Emotional Low-Resource TTS ',
     slug: 'emotional-tts',
     imageSrc: '/images/talkingtom.png',
@@ -92,7 +110,8 @@ const Home = () => {
 
       {/* Projects Section */}
       <div className="bg-gray-200 py-8">
-        <h2 className="text-2xl font-bold text-center mb-6">Projects</h2>
+        <h2 className="text-2xl font-bold text-center ">Projects</h2>
+        <h2 className="font-bold text-center mb-6">Click each tab to learn more</h2>
         <div className="grid grid-cols-3 gap-4 px-4">
           {projectsData.map((project, index) => (
             <Link key={project.slug} href={`/projects/${project.slug}`} passHref legacyBehavior>
