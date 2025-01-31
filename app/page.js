@@ -104,7 +104,7 @@ const Home = () => {
       <div className="flex flex-col items-center justify-center bg-gray-100 h-60">
         <div className="text-3xl font-bold mb-4">Hi, I'm Kevin Liu</div>
         <div className="text-lg text-center mb-6">
-        I'm a junior at the University of Pennsylvania pursuing dual degrees in Computer Science and Economics, with a Master's focus in Robotics. My experience spans quantitative finance, data engineering, and AI research, including backtesting trading strategies, building anomaly detection systems, and applying machine learning to healthcare informatics. A skilled problem solver with a diverse technical toolkit, I excel at developing innovative solutions across web development, automation, and reinforcement learning. Outside academics, I lead initiatives like PClassic and engage in trading and analytics clubs, always striving to combine my technical and leadership skills to create impactful projects.
+        I'm a junior at the University of Pennsylvania pursuing dual degrees in Computer Science and Math, with a Master's focus in Robotics. My experience spans quantitative finance, data engineering, and AI research, including backtesting trading strategies, building anomaly detection systems, and applying machine learning to healthcare informatics. A skilled problem solver with a diverse technical toolkit, I excel at developing innovative solutions across web development, automation, and reinforcement learning. Outside academics, I lead initiatives like PClassic and engage in trading and analytics clubs, always striving to combine my technical and leadership skills to create impactful projects.
         </div>
       </div>
 
