@@ -1,0 +1,17 @@
+Vehicle controllers trained with reinforcement learning
+have been described as achieving super-human racing performance,
+setting lap times comfortably faster than those of expert
+human drivers. However, these controllers are super-human only
+for a particular vehicle on a particular track—change either
+even slightly and a human driver will adapt while the policy
+fails to generalise. A truly super-human policy must therefore
+outperform experts across tracks and hardware platforms. We
+attack this problem with a meta-learning formulation that
+learns F1TENTH autonomous-racing policies capable of rapid
+adaptation to unseen track layouts, vehicle dynamics and opponent
+behaviours. Our method augments Meta-Q-Learning with
+Adaptive Beta Clipping (ABC), a self-tuning variance-reduction
+scheme that clips task-propensity weights using running batch
+statistics. Empirically, ABC tightens the critic-loss distribution,
+lowering its variance by 2.7×—thereby (potentially) enabling
+faster and more stable task adaptation.

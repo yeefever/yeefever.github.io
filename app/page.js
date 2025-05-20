@@ -1,6 +1,7 @@
 import React from 'react';
 import LayoutBase from './components/layoutbase.js';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const projectsData = [
   {
@@ -92,14 +93,50 @@ const projectsData = [
     url: 'https://github.com/yeefever/ling',
     tags: ['TTS'],
     finished: true,
+  },
+  {
+    title: 'MetaCars',
+    slug: 'metacars',
+    imageSrc: '/images/kachow.png',
+    description: 'Teaching Cars to learn how to learn',
+    url: 'https://github.com/RDLigeralde/metacars/tree/aws_deployment',
+    tags: ['RL'],
+    finished: true,
+  },
+  {
+    title: 'Vector Quantization',
+    slug: 'shannon',
+    imageSrc: '/images/vq.png',
+    description: 'A brief discussion of Shannon\'s lower bound',
+    url: null,
+    tags: ['Theory'],
+    finished: true,
   }
 ];
+
+const publicationsData = [
+  {
+    title: "Zero-Shot Extraction of Seizure Outcomes from Clinical Notes Using Generative Pretrained Transformers",
+    authors: "William K. S. Ojemann, Kevin Xie, Kevin Liu, Ellie Chang, Dan Roth, Brian Litt, Colin A. Ellis",
+    venue: "Journal of Healthcare Informatics Research, 2025",
+    link: "https://link.springer.com/article/10.1007/s41666-025-00198-5", // Replace with your real link
+    description: "Investigated using GPT models for extracting seizure outcomes from epilepsy clinic notes, achieving strong zero-shot performance that outperformed baseline BERT in sparse clinical contexts, demonstrating potential for clinical text analysis without manual annotation."
+  },
+];
+
 
 projectsData.sort((a, b) => a.title.localeCompare(b.title));
 
 const Home = () => {
   return (
     <LayoutBase>
+      <Head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+        <link rel="manifest" href="/icon/site.webmanifest" />
+        <link rel="icon" href="icon/favicon.ico" />
+      </Head>
       {/* Intro Section */}
       <div className="flex flex-col items-center justify-center bg-gray-100 h-60">
         <div className="text-3xl font-bold mb-4">Hi, I'm Kevin Liu</div>
@@ -107,6 +144,42 @@ const Home = () => {
         I'm a junior at the University of Pennsylvania pursuing dual degrees in Computer Science and Math, with a Master's focus in Robotics. My experience spans quantitative finance, data engineering, and AI research, including backtesting trading strategies, building anomaly detection systems, and applying machine learning to healthcare informatics. A skilled problem solver with a diverse technical toolkit, I excel at developing innovative solutions across web development, automation, and reinforcement learning. Outside academics, I lead initiatives like PClassic and engage in trading and analytics clubs, always striving to combine my technical and leadership skills to create impactful projects.
         </div>
       </div>
+
+      {/* Publications Section */}
+      <div className="bg-gray-200 py-8">
+        <h2 className="text-2xl font-bold text-center mb-6">Publications</h2>
+        <div className="max-w-4xl mx-auto px-4 space-y-6">
+          {publicationsData.map((pub, index) => {
+            const parts = pub.authors.split(/(Kevin Liu)/g);
+
+            return (
+              <div key={index} className="bg-white rounded shadow p-6">
+                <h3 className="text-xl font-semibold">{pub.title}</h3>
+                <p className="text-sm italic mb-2">
+                  {parts.map((part, i) =>
+                    part === "Kevin Liu" ? (
+                      <strong key={i}>{part}</strong>
+                    ) : (
+                      part
+                    )
+                  )}
+                </p>
+                <p className="text-sm mb-2">{pub.venue}</p>
+                <p className="text-sm mb-2">{pub.description}</p>
+                <a
+                  href={pub.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline text-sm"
+                >
+                  View Paper
+                </a>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
 
       {/* Projects Section */}
       <div className="bg-gray-200 py-8">
