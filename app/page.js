@@ -139,23 +139,23 @@ const Home = () => {
       </Head>
       {/* Intro Section */}
       <div className="flex flex-col items-center justify-center bg-gray-100 h-60">
-        <div className="text-3xl font-bold mb-4">Hi, I'm Kevin Liu</div>
-        <div className="text-lg text-center mb-6">
+        <div className="text-3xl font-bold mb-4 text-black">Hi, I'm Kevin Liu</div>
+        <div className="text-lg text-center mb-6 text-black">
         I'm a junior at the University of Pennsylvania pursuing dual degrees in Computer Science and Math, with a Master's focus in Robotics. My experience spans quantitative finance, data engineering, and AI research, including backtesting trading strategies, building anomaly detection systems, and applying machine learning to healthcare informatics. A skilled problem solver with a diverse technical toolkit, I excel at developing innovative solutions across web development, automation, and reinforcement learning. Outside academics, I lead initiatives like PClassic and engage in trading and analytics clubs, always striving to combine my technical and leadership skills to create impactful projects.
         </div>
       </div>
 
       {/* Publications Section */}
       <div className="bg-gray-200 py-8">
-        <h2 className="text-2xl font-bold text-center mb-6">Publications</h2>
-        <div className="max-w-4xl mx-auto px-4 space-y-6">
+        <h2 className="text-2xl font-bold text-center mb-6 text-black">Publications</h2>
+        <div className="max-w-4xl mx-auto px-4 space-y-6 text-black">
           {publicationsData.map((pub, index) => {
             const parts = pub.authors.split(/(Kevin Liu)/g);
 
             return (
               <div key={index} className="bg-white rounded shadow p-6">
-                <h3 className="text-xl font-semibold">{pub.title}</h3>
-                <p className="text-sm italic mb-2">
+                <h3 className="text-xl font-semibold text-black">{pub.title}</h3>
+                <p className="text-sm italic mb-2 text-black">
                   {parts.map((part, i) =>
                     part === "Kevin Liu" ? (
                       <strong key={i}>{part}</strong>
@@ -164,8 +164,8 @@ const Home = () => {
                     )
                   )}
                 </p>
-                <p className="text-sm mb-2">{pub.venue}</p>
-                <p className="text-sm mb-2">{pub.description}</p>
+                <p className="text-sm mb-2 text-black">{pub.venue}</p>
+                <p className="text-sm mb-2 text-black">{pub.description}</p>
                 <a
                   href={pub.link}
                   target="_blank"
@@ -183,8 +183,8 @@ const Home = () => {
 
       {/* Projects Section */}
       <div className="bg-gray-200 py-8">
-        <h2 className="text-2xl font-bold text-center ">Projects</h2>
-        <h2 className="font-bold text-center mb-6">Click each tab to learn more</h2>
+        <h2 className="text-2xl font-bold text-center text-black">Projects</h2>
+        <h2 className="font-bold text-center mb-6 text-black">Click each tab to learn more</h2>
         <div className="grid grid-cols-3 gap-4 px-4">
           {projectsData.map((project, index) => (
             <Link key={project.slug} href={`/projects/${project.slug}`} passHref legacyBehavior>
@@ -195,8 +195,8 @@ const Home = () => {
                     alt={project.title}
                     className="mb-2 w-full h-32 object-contain"
                   />
-                  <h3 className="text-lg font-semibold text-center mb-1">{project.title}</h3>
-                  <p className="text-sm text-center">{project.description}</p>
+                  <h3 className="text-lg font-semibold text-center mb-1 text-black">{project.title}</h3>
+                  <p className="text-sm text-center text-black">{project.description}</p>
                   <div className="mt-2 flex flex-wrap justify-center">
                     {project.tags.map((tag, tagIndex) => (
                       <span
