@@ -22,6 +22,7 @@ export function getAllPosts() {
       slug,
       title: data.title,
       date: data.date,
+      blurb: data.blurb || data.summary || '',
       content,
     };
   });

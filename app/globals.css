@@ -26,6 +26,11 @@ body {
   line-height: 1.7;
 }
 
+/* Indent paragraphs after the first in a block of prose */
+.prose-custom p + p {
+  text-indent: 1.5em;
+}
+
 .prose-custom p:last-child {
   margin-bottom: 0;
 }
@@ -75,4 +80,19 @@ body {
   padding-left: 1em;
   margin: 1.25em 0;
   color: var(--foreground-muted);
+}
+.prose-custom img[src$="bocchi.png"] {
+  display: block;
+  margin: 0.25rem auto;
+  max-width: 10%;
+  height: auto;
+
+  filter:
+    sepia(0.60)
+    hue-rotate(300deg)
+    saturate(0.9)
+    brightness(1.00)
+    contrast(0.85);
+
+  opacity: 0.90;  
 }

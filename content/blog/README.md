@@ -14,6 +14,7 @@ Example: `2025-02-15-on-learning.md`
 ---
 title: Your Post Title
 date: 2025-02-15
+blurb: Optional short summary shown on the blog index
 ---
 ```
 

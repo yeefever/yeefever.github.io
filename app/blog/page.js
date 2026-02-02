@@ -22,16 +22,18 @@ export default function BlogIndex() {
                   <h2 className="text-lg font-medium group-hover:underline mb-1">
                     {post.title}
                   </h2>
-                  <time
-                    dateTime={post.date}
-                    className="text-sm text-[var(--foreground-muted)]"
-                  >
-                    {new Date(post.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })}
-                  </time>
+                  <div className="text-sm text-[var(--foreground-muted)]">
+                    <time dateTime={post.date}>
+                      {new Date(post.date).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </time>
+                    {post.blurb && (
+                      <span className="ml-2">— {post.blurb}</span>
+                    )}
+                  </div>
                 </Link>
               </li>
             ))}

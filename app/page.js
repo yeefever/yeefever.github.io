@@ -20,10 +20,7 @@ export default function Home() {
         <section className="prose-custom mb-20">
           <h1 className="text-2xl font-semibold mb-8">Kevin Liu</h1>
           <p>
-            I study computer science and economics at the University of Pennsylvania, with a Master's in Robotics. My favorite animals are capybara.
-          </p>
-          <p>
-            I care about problems that sit at the intersection of theory and practice. I try to build simple things that make my life easier.
+            I study computer science and economics at the University of Pennsylvania, with a Master's in Robotics. My favorite animal is the capybara. I enjoy solving about problems that sit at the intersection of theory and practice. I try to build simple things that make life happier.
           </p>
         </section>
 
