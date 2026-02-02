@@ -1,19 +1,10 @@
-import Header from './header';
-import Footer from './footer';
-const LayoutBase = ({ children }) => {
+import Sidebar from './header';
+
+export default function LayoutBase({ children }) {
   return (
-    <>
-
-<div className="bg-gray-100 min-h-screen flex flex-col">
-  <Header></Header>
-  <main className="p-4 flex-grow">
-    {children}
-  </main>
-  <Footer></Footer>
-</div>
-
-    </>
+    <div className="min-h-screen flex bg-[var(--background)]">
+      <Sidebar />
+      <main className="flex-grow min-w-0">{children}</main>
+    </div>
   );
-};
-
-export default LayoutBase;
+}

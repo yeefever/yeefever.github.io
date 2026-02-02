@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      },
       animation: {
         revealbody: 'revealbody 1s ease-in-out',
         revealnav: 'revealnav 1s ease-in-out',

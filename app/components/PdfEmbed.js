@@ -1,37 +1,27 @@
-"use client"
-import React, { useState } from 'react';
+'use client';
 
-const PdfEmbed = ({ pdfPath, buttonText}) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+import { useState } from 'react';
 
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
+export default function PdfEmbed({ pdfPath, buttonText }) {
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
-    <div style={{ width: '100%' }}>
-      <button 
-        onClick={toggleCollapse} 
-        style={{ 
-          marginBottom: '10px', 
-          display: 'block', 
-          margin: '0 auto' 
-        }}
+    <div>
+      <button
+        onClick={() => setIsCollapsed(!isCollapsed)}
+        className="text-sm text-[var(--foreground-muted)] hover:text-[var(--foreground)] mb-4"
       >
         {isCollapsed ? `Show ${buttonText}` : `Hide ${buttonText}`}
       </button>
       {!isCollapsed && (
-        <div style={{ height: '100vh', width: '100%' }}>
+        <div className="w-full h-[80vh] rounded border border-[var(--border)] overflow-hidden">
           <embed
             src={pdfPath}
             type="application/pdf"
-            width="100%"
-            height="100%"
+            className="w-full h-full"
           />
         </div>
       )}
     </div>
   );
-};
-
-export default PdfEmbed;
+}

@@ -1,7 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Source_Serif_4 } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const sourceSerif = Source_Serif_4({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: "Kevin Liu",
@@ -35,7 +38,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <body className={inter.className}>{children}</body>
+       <body className="font-serif">{children}</body>
     </html>
   )
 }

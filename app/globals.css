@@ -3,18 +3,76 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground: #1a1a1a;
+  --foreground-muted: #6b6b6b;
+  --background: #fafafa;
+  --border: #e5e5e5;
 }
 
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prose styling for readable content */
+.prose-custom {
+  max-width: 65ch;
+}
+
+.prose-custom p {
+  margin-bottom: 1.25em;
+  line-height: 1.7;
+}
+
+.prose-custom p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-custom a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-custom a:hover {
+  color: var(--foreground-muted);
+}
+
+.prose-custom h1, .prose-custom h2, .prose-custom h3 {
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+}
+
+.prose-custom h1 { font-size: 1.5em; }
+.prose-custom h2 { font-size: 1.25em; }
+.prose-custom h3 { font-size: 1.1em; }
+
+.prose-custom ul, .prose-custom ol {
+  margin-bottom: 1.25em;
+  padding-left: 1.5em;
+}
+
+.prose-custom li {
+  margin-bottom: 0.5em;
+}
+
+.prose-custom code {
+  font-size: 0.9em;
+  background: var(--border);
+  padding: 0.15em 0.4em;
+  border-radius: 2px;
+}
+
+.prose-custom strong {
+  font-weight: 600;
+}
+
+.prose-custom blockquote {
+  border-left: 3px solid var(--border);
+  padding-left: 1em;
+  margin: 1.25em 0;
+  color: var(--foreground-muted);
 }
