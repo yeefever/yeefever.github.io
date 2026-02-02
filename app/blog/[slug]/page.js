@@ -4,14 +4,14 @@ import Link from 'next/link';
 import { getAllPosts, getPostBySlug } from '../../lib/blog';
 import { renderMarkdown } from '../../lib/markdown';
 
-/**
- * Generate static params for all blog posts.
- * To add a new post: create content/blog/YYYY-MM-DD-your-slug.md
- * with frontmatter: title, date
- */
 export async function generateStaticParams() {
-  const posts = getAllPosts();
-  return posts.map((p) => ({ slug: p.slug }));
+  try {
+    const posts = getAllPosts();
+    const params = posts.map((p) => ({ slug: p.slug }));
+    return params.length > 0 ? params : [{ slug: '_placeholder' }];
+  } catch {
+    return [{ slug: '_placeholder' }];
+  }
 }
 
 export default async function BlogPostPage({ params }) {
