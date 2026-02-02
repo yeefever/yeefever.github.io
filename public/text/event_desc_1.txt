@@ -1,0 +1,2 @@
+
+Event bot is designed to streamline event registration and increase participation within a server. When a new event is created, the bot sends direct messages to invitees to gage interest, eliminating the risk of missing the date for those less privy to checking groupchats. 

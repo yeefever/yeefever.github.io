@@ -1,0 +1,1 @@
+Super Smash Bros. Melee emphasizes fast movement and positioning, offering a dynamic challenge for RL agents. Prior models achieved superhuman performance using inaccessible data, but the aim is to use a visual backbone for fairer play.

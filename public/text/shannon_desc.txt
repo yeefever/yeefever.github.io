@@ -1,0 +1,1 @@
+I prove Shannon's lower bound for vector quantization.
