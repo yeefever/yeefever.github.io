@@ -1,0 +1,407 @@
+[step] steps=64 ratio=0.778 loss=0.0636 excess=51.553 progress=-1015.2%
+[step] steps=64 ratio=0.778 loss=0.0636 excess=51.553 progress=-1015.2%
+2026-03-03T06:35:50.967Z | fps:3.1 | update:0.00ms | render:5.60ms | loss:0.60ms | stroke:71.9 | ratio:0.778 | ink:0.0800 | maskedLoss:0.0636 | excess:51.553 | morphing:true
+[target-loaded] mambo=0 fullMamboBlack=731.4
+[init] field=60x27
+2026-03-03T06:35:55.055Z | fps:7.6 | update:0.00ms | render:4.00ms | loss:1.10ms | stroke:0.0 | ratio:0.000 | ink:0.0000 | maskedLoss:0.0000 | excess:0.000 | morphing:false
+2026-03-03T06:35:59.592Z | fps:6.8 | update:0.00ms | render:5.30ms | loss:0.70ms | stroke:0.0 | ratio:0.000 | ink:0.0000 | maskedLoss:0.0000 | excess:0.000 | morphing:false
+2026-03-03T06:36:00.600Z | fps:40.7 | update:0.00ms | render:4.70ms | loss:1.10ms | stroke:0.0 | ratio:0.000 | ink:0.0000 | maskedLoss:0.0000 | excess:0.000 | morphing:false
+[morph-start] ink=0.0122 mambo=0 initLoss=0.0055
+2026-03-03T06:36:01.600Z | fps:40.0 | update:0.00ms | render:6.10ms | loss:0.90ms | stroke:112.5 | ratio:0.154 | ink:0.1283 | maskedLoss:0.1221 | excess:98.923 | morphing:true
+2026-03-03T06:36:02.601Z | fps:40.0 | update:0.00ms | render:4.60ms | loss:0.30ms | stroke:157.7 | ratio:0.216 | ink:0.1691 | maskedLoss:0.1622 | excess:131.409 | morphing:true
+[step] steps=64 ratio=0.216 loss=0.1495 excess=121.132 progress=-2607.2%
+2026-03-03T06:36:03.625Z | fps:40.0 | update:0.00ms | render:4.70ms | loss:0.30ms | stroke:157.7 | ratio:0.216 | ink:0.1691 | maskedLoss:0.1495 | excess:121.132 | morphing:true
+2026-03-03T06:36:05.103Z | fps:5.4 | update:0.00ms | render:1.20ms | loss:0.10ms | stroke:157.7 | ratio:0.216 | ink:0.1691 | maskedLoss:0.1495 | excess:121.132 | morphing:true
+[step] steps=64 ratio=0.216 loss=0.1495 excess=121.132 progress=-2607.2%
+[step] steps=64 ratio=0.216 loss=0.1495 excess=121.132 progress=-2607.2%
+2026-03-03T06:36:06.127Z | fps:40.0 | update:0.00ms | render:4.30ms | loss:0.30ms | stroke:157.7 | ratio:0.216 | ink:0.1691 | maskedLoss:0.1495 | excess:121.132 | morphing:true
+2026-03-03T06:36:12.171Z | fps:2.5 | update:0.00ms | render:2.10ms | loss:0.20ms | stroke:157.7 | ratio:0.216 | ink:0.1691 | maskedLoss:0.1495 | excess:121.132 | morphing:true
+2026-03-03T06:36:13.180Z | fps:39.6 | update:0.00ms | render:4.60ms | loss:0.30ms | stroke:157.7 | ratio:0.216 | ink:0.1691 | maskedLoss:0.1495 | excess:121.132 | morphing:true
+2026-03-03T06:36:14.205Z | fps:40.0 | update:0.00ms | render:4.80ms | loss:0.40ms | stroke:170.3 | ratio:0.233 | ink:0.1818 | maskedLoss:0.1608 | excess:130.244 | morphing:true
+[step] steps=64 ratio=0.233 loss=0.1583 excess=128.218 progress=-2765.6%
+2026-03-03T06:36:15.205Z | fps:40.0 | update:0.00ms | render:5.40ms | loss:0.50ms | stroke:170.3 | ratio:0.233 | ink:0.1818 | maskedLoss:0.1583 | excess:128.218 | morphing:true
+[step] steps=64 ratio=0.233 loss=0.1583 excess=128.218 progress=-2765.6%
+2026-03-03T06:36:16.230Z | fps:40.0 | update:0.00ms | render:5.10ms | loss:0.20ms | stroke:170.3 | ratio:0.233 | ink:0.1818 | maskedLoss:0.1583 | excess:128.218 | morphing:true
+2026-03-03T06:36:17.231Z | fps:40.0 | update:0.00ms | render:4.80ms | loss:0.40ms | stroke:223.5 | ratio:0.306 | ink:0.2227 | maskedLoss:0.2085 | excess:168.852 | morphing:true
+[step] steps=64 ratio=0.306 loss=0.2016 excess=163.286 progress=-3549.3%
+2026-03-03T06:36:18.231Z | fps:40.0 | update:0.00ms | render:5.60ms | loss:0.80ms | stroke:223.5 | ratio:0.306 | ink:0.2227 | maskedLoss:0.2016 | excess:163.286 | morphing:true
+2026-03-03T06:36:22.477Z | fps:2.8 | update:0.00ms | render:2.60ms | loss:0.10ms | stroke:223.5 | ratio:0.306 | ink:0.2227 | maskedLoss:0.2016 | excess:163.286 | morphing:true
+2026-03-03T06:36:23.483Z | fps:40.8 | update:0.00ms | render:6.70ms | loss:0.30ms | stroke:223.5 | ratio:0.306 | ink:0.2227 | maskedLoss:0.2016 | excess:163.286 | morphing:true
+2026-03-03T06:36:24.484Z | fps:40.0 | update:0.00ms | render:4.40ms | loss:0.50ms | stroke:223.5 | ratio:0.306 | ink:0.2227 | maskedLoss:0.2016 | excess:163.286 | morphing:true
+2026-03-03T06:36:25.484Z | fps:40.0 | update:0.00ms | render:4.50ms | loss:0.70ms | stroke:223.5 | ratio:0.306 | ink:0.2227 | maskedLoss:0.2016 | excess:163.286 | morphing:true
+2026-03-03T06:39:06.546Z | fps:0.1 | update:0.00ms | render:1.70ms | loss:0.20ms | stroke:223.5 | ratio:0.306 | ink:0.2227 | maskedLoss:0.2016 | excess:163.286 | morphing:true
+[target-loaded] mambo=6 fullMamboBlack=92.5
+[init] field=60x27
+[morph-start] ink=0.0125 mambo=6 initLoss=0.0055
+2026-03-03T06:39:08.671Z | fps:40.0 | update:0.00ms | render:7.10ms | loss:1.00ms | stroke:43.2 | ratio:0.467 | ink:0.0416 | maskedLoss:0.0410 | excess:33.248 | morphing:true
+2026-03-03T06:39:09.671Z | fps:40.0 | update:0.00ms | render:4.70ms | loss:0.30ms | stroke:44.0 | ratio:0.476 | ink:0.0424 | maskedLoss:0.0413 | excess:33.449 | morphing:true
+[step] moved=816.1781 loss=0.0181 excess=14.625
+[step] moved=483.7781 loss=0.0141 excess=11.428
+2026-03-03T06:39:10.697Z | fps:40.0 | update:0.00ms | render:4.80ms | loss:0.30ms | stroke:44.0 | ratio:0.476 | ink:0.0424 | maskedLoss:0.0141 | excess:11.428 | morphing:true
+[step] moved=378.1920 loss=0.0121 excess=9.790
+[step] moved=316.8630 loss=0.0108 excess=8.752
+2026-03-03T06:39:11.697Z | fps:40.0 | update:0.00ms | render:5.70ms | loss:0.10ms | stroke:44.0 | ratio:0.476 | ink:0.0424 | maskedLoss:0.0108 | excess:8.752 | morphing:true
+2026-03-03T06:39:12.723Z | fps:40.0 | update:0.00ms | render:5.30ms | loss:0.40ms | stroke:137.7 | ratio:1.490 | ink:0.1285 | maskedLoss:0.0662 | excess:53.884 | morphing:true
+[step] moved=1179.2168 loss=0.0278 excess=22.720
+2026-03-03T06:39:13.723Z | fps:40.0 | update:0.00ms | render:5.10ms | loss:0.50ms | stroke:137.7 | ratio:1.490 | ink:0.1285 | maskedLoss:0.0278 | excess:22.721 | morphing:true
+[step] moved=757.9273 loss=0.0234 excess=19.199
+2026-03-03T06:39:14.728Z | fps:39.8 | update:0.00ms | render:6.00ms | loss:0.40ms | stroke:137.7 | ratio:1.490 | ink:0.1285 | maskedLoss:0.0234 | excess:19.199 | morphing:true
+2026-03-03T06:39:16.504Z | fps:0.6 | update:0.00ms | render:0.10ms | loss:0.00ms | stroke:137.7 | ratio:1.490 | ink:0.1285 | maskedLoss:0.0234 | excess:19.199 | morphing:true
+2026-03-03T06:39:17.524Z | fps:40.2 | update:0.00ms | render:7.30ms | loss:0.70ms | stroke:137.7 | ratio:1.490 | ink:0.1285 | maskedLoss:0.0234 | excess:19.199 | morphing:true
+2026-03-03T06:39:27.483Z | fps:2.9 | update:0.00ms | render:2.90ms | loss:0.30ms | stroke:194.6 | ratio:2.104 | ink:0.1806 | maskedLoss:0.0609 | excess:56.382 | morphing:true
+[target-loaded] mambo=6 fullMamboBlack=92.5
+[init] field=60x27
+[morph-start] ink=0.0148 mambo=6 initLoss=0.0071
+2026-03-03T06:39:29.431Z | fps:39.5 | update:0.00ms | render:7.40ms | loss:1.00ms | stroke:73.7 | ratio:0.797 | ink:0.0936 | maskedLoss:0.0572 | excess:46.316 | morphing:true
+[step] moved=589.0881 loss=0.0272 excess=22.021
+[step] moved=374.2905 loss=0.0227 excess=18.416
+2026-03-03T06:39:30.454Z | fps:40.1 | update:0.00ms | render:4.60ms | loss:0.30ms | stroke:73.7 | ratio:0.797 | ink:0.0936 | maskedLoss:0.0227 | excess:18.416 | morphing:true
+[step] moved=306.4559 loss=0.0204 excess=16.491
+2026-03-03T06:39:32.886Z | fps:11.5 | update:0.00ms | render:3.80ms | loss:0.40ms | stroke:73.7 | ratio:0.797 | ink:0.0936 | maskedLoss:0.0204 | excess:16.491 | morphing:true
+[target-loaded] mambo=6 fullMamboBlack=92.5
+[init] field=60x27
+[morph-start] ink=0.0248 mambo=6 initLoss=0.0111
+2026-03-03T06:39:34.731Z | fps:40.6 | update:0.00ms | render:7.50ms | loss:0.60ms | stroke:66.2 | ratio:0.716 | ink:0.0860 | maskedLoss:0.0562 | excess:45.551 | morphing:true
+[step] moved=119.6101 loss=0.0428 excess=34.697
+2026-03-03T06:39:35.731Z | fps:40.0 | update:0.00ms | render:4.80ms | loss:0.80ms | stroke:66.2 | ratio:0.716 | ink:0.0860 | maskedLoss:0.0428 | excess:34.697 | morphing:true
+[step] moved=89.0431 loss=0.0389 excess=31.532
+[step] moved=78.8556 loss=0.0369 excess=29.862
+[step] moved=72.9380 loss=0.0353 excess=28.623
+2026-03-03T06:39:36.756Z | fps:40.0 | update:0.00ms | render:5.70ms | loss:0.50ms | stroke:66.2 | ratio:0.716 | ink:0.0860 | maskedLoss:0.0353 | excess:28.623 | morphing:true
+[step] moved=68.5309 loss=0.0339 excess=27.487
+[step] moved=64.9223 loss=0.0329 excess=26.617
+[step] moved=62.0207 loss=0.0319 excess=25.852
+[step] moved=59.4930 loss=0.0310 excess=25.130
+2026-03-03T06:39:37.757Z | fps:40.0 | update:0.00ms | render:5.80ms | loss:0.50ms | stroke:66.2 | ratio:0.716 | ink:0.0860 | maskedLoss:0.0310 | excess:25.130 | morphing:true
+[step] moved=57.3199 loss=0.0303 excess=24.547
+[step] moved=55.4931 loss=0.0296 excess=23.976
+[step] moved=53.7627 loss=0.0289 excess=23.435
+[step] moved=52.1771 loss=0.0283 excess=22.944
+[step] moved=50.7615 loss=0.0278 excess=22.488
+[step] moved=49.4060 loss=0.0272 excess=22.034
+[step] moved=48.0892 loss=0.0267 excess=21.598
+[step] moved=46.8247 loss=0.0262 excess=21.188
+2026-03-03T06:39:38.758Z | fps:40.0 | update:0.00ms | render:6.80ms | loss:0.30ms | stroke:66.2 | ratio:0.716 | ink:0.0860 | maskedLoss:0.0262 | excess:21.188 | morphing:true
+2026-03-03T06:39:39.783Z | fps:40.0 | update:0.00ms | render:5.80ms | loss:0.30ms | stroke:119.1 | ratio:1.288 | ink:0.1347 | maskedLoss:0.0684 | excess:55.432 | morphing:true
+[step] moved=134.6227 loss=0.0533 excess=43.116
+2026-03-03T06:39:40.783Z | fps:40.0 | update:0.00ms | render:4.90ms | loss:0.80ms | stroke:118.9 | ratio:1.286 | ink:0.1347 | maskedLoss:0.0533 | excess:43.167 | morphing:true
+2026-03-03T06:39:41.784Z | fps:40.0 | update:0.00ms | render:6.10ms | loss:0.20ms | stroke:118.9 | ratio:1.286 | ink:0.1347 | maskedLoss:0.0533 | excess:43.167 | morphing:true
+2026-03-03T06:40:16.872Z | fps:0.3 | update:0.00ms | render:4.20ms | loss:0.00ms | stroke:118.9 | ratio:1.286 | ink:0.1347 | maskedLoss:0.0533 | excess:43.167 | morphing:true
+2026-03-03T06:40:18.585Z | fps:6.4 | update:0.00ms | render:1.70ms | loss:0.30ms | stroke:118.9 | ratio:1.286 | ink:0.1347 | maskedLoss:0.0533 | excess:43.167 | morphing:true
+2026-03-03T06:41:59.649Z | fps:0.4 | update:0.00ms | render:4.60ms | loss:0.30ms | stroke:118.9 | ratio:1.286 | ink:0.1347 | maskedLoss:0.0533 | excess:43.167 | morphing:true
+2026-03-03T06:42:14.785Z | fps:1.5 | update:0.00ms | render:2.70ms | loss:0.00ms | stroke:118.9 | ratio:1.286 | ink:0.1347 | maskedLoss:0.0533 | excess:43.167 | morphing:true
+2026-03-03T06:42:15.792Z | fps:39.7 | update:0.00ms | render:4.60ms | loss:0.30ms | stroke:118.9 | ratio:1.286 | ink:0.1347 | maskedLoss:0.0533 | excess:43.167 | morphing:true
+2026-03-03T06:42:16.792Z | fps:40.0 | update:0.00ms | render:4.30ms | loss:0.70ms | stroke:141.8 | ratio:1.533 | ink:0.1549 | maskedLoss:0.0699 | excess:56.982 | morphing:true
+2026-03-03T06:42:17.793Z | fps:40.0 | update:0.00ms | render:4.60ms | loss:0.60ms | stroke:159.9 | ratio:1.729 | ink:0.1737 | maskedLoss:0.0879 | excess:72.754 | morphing:true
+2026-03-03T06:42:18.793Z | fps:40.0 | update:0.00ms | render:5.40ms | loss:1.00ms | stroke:166.6 | ratio:1.801 | ink:0.1816 | maskedLoss:0.0942 | excess:78.595 | morphing:true
+2026-03-03T06:42:19.793Z | fps:40.0 | update:0.00ms | render:5.10ms | loss:0.60ms | stroke:180.4 | ratio:1.951 | ink:0.1968 | maskedLoss:0.1068 | excess:90.818 | morphing:true
+2026-03-03T06:42:20.793Z | fps:40.0 | update:0.00ms | render:5.30ms | loss:0.40ms | stroke:180.4 | ratio:1.951 | ink:0.1968 | maskedLoss:0.1068 | excess:90.818 | morphing:true
+[target-loaded] mambo=1 fullMamboBlack=1116.0
+[init] field=60x27
+2026-03-03T06:42:22.355Z | fps:15.2 | update:0.00ms | render:2.80ms | loss:0.50ms | stroke:0.0 | ratio:0.000 | ink:0.0000 | maskedLoss:0.0000 | excess:0.000 | morphing:false
+2026-03-03T06:42:23.370Z | fps:40.4 | update:0.00ms | render:5.50ms | loss:1.00ms | stroke:0.0 | ratio:0.000 | ink:0.0000 | maskedLoss:0.0000 | excess:0.000 | morphing:false
+2026-03-03T06:42:24.371Z | fps:40.0 | update:0.00ms | render:8.00ms | loss:0.80ms | stroke:0.0 | ratio:0.000 | ink:0.0072 | maskedLoss:0.0038 | excess:6.166 | morphing:false
+[morph-start] ink=0.0124 mambo=1 initLoss=0.0062
+2026-03-03T06:42:25.373Z | fps:39.9 | update:0.00ms | render:4.60ms | loss:0.30ms | stroke:23.3 | ratio:0.021 | ink:0.0228 | maskedLoss:0.0137 | excess:11.110 | morphing:true
+2026-03-03T06:42:26.373Z | fps:40.0 | update:0.00ms | render:4.00ms | loss:0.40ms | stroke:37.5 | ratio:0.034 | ink:0.0358 | maskedLoss:0.0177 | excess:14.367 | morphing:true
+2026-03-03T06:42:27.399Z | fps:40.0 | update:0.00ms | render:4.10ms | loss:0.30ms | stroke:62.4 | ratio:0.056 | ink:0.0539 | maskedLoss:0.0255 | excess:20.652 | morphing:true
+2026-03-03T06:42:28.422Z | fps:40.0 | update:0.00ms | render:5.30ms | loss:0.20ms | stroke:75.1 | ratio:0.067 | ink:0.0634 | maskedLoss:0.0246 | excess:19.906 | morphing:true
+2026-03-03T06:42:29.422Z | fps:40.0 | update:0.00ms | render:4.70ms | loss:0.30ms | stroke:88.1 | ratio:0.079 | ink:0.0742 | maskedLoss:0.0241 | excess:19.521 | morphing:true
+2026-03-03T06:42:30.424Z | fps:40.0 | update:0.00ms | render:4.20ms | loss:0.40ms | stroke:135.1 | ratio:0.121 | ink:0.0895 | maskedLoss:0.0434 | excess:35.188 | morphing:true
+2026-03-03T06:42:31.424Z | fps:40.0 | update:0.00ms | render:4.50ms | loss:0.20ms | stroke:168.8 | ratio:0.151 | ink:0.1065 | maskedLoss:0.0491 | excess:39.733 | morphing:true
+2026-03-03T06:42:32.424Z | fps:40.0 | update:0.00ms | render:4.80ms | loss:0.40ms | stroke:230.8 | ratio:0.207 | ink:0.1225 | maskedLoss:0.0689 | excess:55.829 | morphing:true
+2026-03-03T06:42:33.449Z | fps:40.0 | update:0.00ms | render:4.60ms | loss:0.20ms | stroke:239.9 | ratio:0.215 | ink:0.1229 | maskedLoss:0.0543 | excess:43.954 | morphing:true
+2026-03-03T06:42:34.451Z | fps:39.9 | update:0.00ms | render:4.00ms | loss:0.20ms | stroke:255.0 | ratio:0.228 | ink:0.1330 | maskedLoss:0.0459 | excess:37.191 | morphing:true
+2026-03-03T06:42:35.451Z | fps:40.0 | update:0.00ms | render:4.40ms | loss:0.60ms | stroke:268.9 | ratio:0.241 | ink:0.1342 | maskedLoss:0.0414 | excess:33.571 | morphing:true
+2026-03-03T06:42:36.451Z | fps:40.0 | update:0.00ms | render:4.20ms | loss:0.60ms | stroke:268.9 | ratio:0.241 | ink:0.1342 | maskedLoss:0.0335 | excess:27.127 | morphing:true
+2026-03-03T06:42:37.451Z | fps:40.0 | update:0.00ms | render:4.20ms | loss:0.30ms | stroke:294.6 | ratio:0.264 | ink:0.1532 | maskedLoss:0.0320 | excess:25.918 | morphing:true
+2026-03-03T06:42:38.452Z | fps:40.0 | update:0.00ms | render:4.50ms | loss:0.40ms | stroke:323.4 | ratio:0.290 | ink:0.1538 | maskedLoss:0.0394 | excess:31.947 | morphing:true
+2026-03-03T06:42:39.452Z | fps:40.0 | update:0.00ms | render:4.10ms | loss:0.40ms | stroke:326.8 | ratio:0.293 | ink:0.1538 | maskedLoss:0.0323 | excess:26.143 | morphing:true
+2026-03-03T06:42:40.868Z | fps:17.6 | update:0.00ms | render:3.30ms | loss:0.10ms | stroke:326.8 | ratio:0.293 | ink:0.1538 | maskedLoss:0.0280 | excess:22.649 | morphing:true
+2026-03-03T06:42:41.878Z | fps:40.6 | update:0.00ms | render:5.00ms | loss:0.10ms | stroke:326.8 | ratio:0.293 | ink:0.1538 | maskedLoss:0.0240 | excess:19.400 | morphing:true
+2026-03-03T06:42:46.563Z | fps:4.5 | update:0.00ms | render:2.40ms | loss:0.10ms | stroke:326.8 | ratio:0.293 | ink:0.1538 | maskedLoss:0.0227 | excess:18.371 | morphing:true
+[target-loaded] mambo=3 fullMamboBlack=640.1
+[init] field=60x27
+2026-03-03T06:42:48.804Z | fps:40.7 | update:0.00ms | render:6.60ms | loss:0.90ms | stroke:0.0 | ratio:0.000 | ink:0.0084 | maskedLoss:0.0064 | excess:10.400 | morphing:false
+[morph-start] ink=0.0105 mambo=3 initLoss=0.0073
+2026-03-03T06:42:49.805Z | fps:40.0 | update:0.00ms | render:5.50ms | loss:0.30ms | stroke:23.7 | ratio:0.037 | ink:0.0210 | maskedLoss:0.0243 | excess:19.684 | morphing:true
+2026-03-03T06:42:50.806Z | fps:40.0 | update:0.00ms | render:4.20ms | loss:0.20ms | stroke:30.7 | ratio:0.048 | ink:0.0284 | maskedLoss:0.0269 | excess:21.823 | morphing:true
+2026-03-03T06:42:51.831Z | fps:40.0 | update:0.00ms | render:4.90ms | loss:0.50ms | stroke:53.7 | ratio:0.084 | ink:0.0528 | maskedLoss:0.0436 | excess:35.289 | morphing:true
+2026-03-03T06:42:52.831Z | fps:40.0 | update:0.00ms | render:5.20ms | loss:0.00ms | stroke:59.5 | ratio:0.093 | ink:0.0564 | maskedLoss:0.0429 | excess:34.726 | morphing:true
+2026-03-03T06:43:36.800Z | fps:0.6 | update:0.00ms | render:5.00ms | loss:0.30ms | stroke:59.5 | ratio:0.093 | ink:0.0564 | maskedLoss:0.0397 | excess:32.125 | morphing:true
+2026-03-03T06:43:37.823Z | fps:40.1 | update:0.00ms | render:5.60ms | loss:0.20ms | stroke:59.5 | ratio:0.093 | ink:0.0564 | maskedLoss:0.0361 | excess:29.251 | morphing:true
+2026-03-03T06:43:40.239Z | fps:12.8 | update:0.00ms | render:3.50ms | loss:0.20ms | stroke:68.8 | ratio:0.107 | ink:0.0685 | maskedLoss:0.0399 | excess:32.332 | morphing:true
+2026-03-03T06:43:41.249Z | fps:40.6 | update:0.00ms | render:4.00ms | loss:0.50ms | stroke:68.8 | ratio:0.107 | ink:0.0685 | maskedLoss:0.0370 | excess:29.972 | morphing:true
+2026-03-03T06:45:11.850Z | fps:0.0 | update:0.00ms | render:0.40ms | loss:0.00ms | stroke:68.8 | ratio:0.107 | ink:0.0685 | maskedLoss:0.0367 | excess:29.749 | morphing:true
+[target-loaded] mambo=6 fullMamboBlack=92.5
+[init] field=60x27
+[morph-start] ink=0.0101 mambo=6 initLoss=0.0047
+2026-03-03T06:45:13.560Z | fps:39.2 | update:0.00ms | render:6.70ms | loss:2.00ms | stroke:29.1 | ratio:0.315 | ink:0.0320 | maskedLoss:0.0237 | excess:19.199 | morphing:true
+2026-03-03T06:45:14.585Z | fps:40.0 | update:0.00ms | render:5.30ms | loss:0.20ms | stroke:37.2 | ratio:0.403 | ink:0.0420 | maskedLoss:0.0212 | excess:17.187 | morphing:true
+2026-03-03T06:45:15.585Z | fps:40.0 | update:0.00ms | render:5.60ms | loss:0.40ms | stroke:59.3 | ratio:0.641 | ink:0.0651 | maskedLoss:0.0285 | excess:23.082 | morphing:true
+2026-03-03T06:45:16.585Z | fps:40.0 | update:0.00ms | render:6.30ms | loss:0.30ms | stroke:65.0 | ratio:0.703 | ink:0.0698 | maskedLoss:0.0312 | excess:25.289 | morphing:true
+2026-03-03T06:45:22.325Z | fps:7.0 | update:0.00ms | render:5.90ms | loss:0.40ms | stroke:65.0 | ratio:0.703 | ink:0.0698 | maskedLoss:0.0291 | excess:23.604 | morphing:true
+[target-loaded] mambo=4 fullMamboBlack=647.8
+[init] field=60x27
+[morph-start] ink=0.0101 mambo=4 initLoss=0.0053
+2026-03-03T06:45:24.189Z | fps:39.3 | update:0.00ms | render:5.80ms | loss:1.00ms | stroke:8.6 | ratio:0.013 | ink:0.0101 | maskedLoss:0.0104 | excess:8.442 | morphing:true
+2026-03-03T06:45:25.213Z | fps:40.0 | update:0.00ms | render:5.60ms | loss:0.20ms | stroke:23.3 | ratio:0.036 | ink:0.0280 | maskedLoss:0.0265 | excess:21.482 | morphing:true
+2026-03-03T06:45:26.215Z | fps:39.9 | update:0.00ms | render:5.00ms | loss:0.50ms | stroke:39.0 | ratio:0.060 | ink:0.0440 | maskedLoss:0.0427 | excess:34.602 | morphing:true
+2026-03-03T06:45:27.666Z | fps:2.8 | update:0.00ms | render:4.10ms | loss:0.00ms | stroke:39.0 | ratio:0.060 | ink:0.0440 | maskedLoss:0.0415 | excess:33.598 | morphing:true
+2026-03-03T06:45:30.737Z | fps:10.1 | update:0.00ms | render:4.80ms | loss:0.20ms | stroke:39.0 | ratio:0.060 | ink:0.0440 | maskedLoss:0.0405 | excess:32.842 | morphing:true
+[target-loaded] mambo=5 fullMamboBlack=246.7
+[init] field=60x27
+2026-03-03T06:45:32.466Z | fps:38.5 | update:0.00ms | render:6.50ms | loss:1.20ms | stroke:0.0 | ratio:0.000 | ink:0.0092 | maskedLoss:0.0046 | excess:7.491 | morphing:false
+[morph-start] ink=0.0102 mambo=5 initLoss=0.0051
+2026-03-03T06:45:33.467Z | fps:40.0 | update:0.00ms | render:5.20ms | loss:0.30ms | stroke:22.7 | ratio:0.092 | ink:0.0282 | maskedLoss:0.0250 | excess:20.239 | morphing:true
+2026-03-03T06:45:34.467Z | fps:40.0 | update:0.00ms | render:6.20ms | loss:0.40ms | stroke:39.8 | ratio:0.161 | ink:0.0444 | maskedLoss:0.0413 | excess:33.437 | morphing:true
+2026-03-03T06:45:35.493Z | fps:40.0 | update:0.00ms | render:5.40ms | loss:0.70ms | stroke:55.7 | ratio:0.226 | ink:0.0615 | maskedLoss:0.0541 | excess:43.788 | morphing:true
+2026-03-03T06:45:36.517Z | fps:40.0 | update:0.00ms | render:5.70ms | loss:0.20ms | stroke:72.1 | ratio:0.292 | ink:0.0769 | maskedLoss:0.0570 | excess:46.183 | morphing:true
+2026-03-03T06:45:37.518Z | fps:40.0 | update:0.00ms | render:5.30ms | loss:0.60ms | stroke:86.7 | ratio:0.352 | ink:0.0908 | maskedLoss:0.0636 | excess:51.555 | morphing:true
+2026-03-03T06:45:38.519Z | fps:40.0 | update:0.00ms | render:5.90ms | loss:0.70ms | stroke:95.6 | ratio:0.387 | ink:0.1002 | maskedLoss:0.0680 | excess:55.103 | morphing:true
+2026-03-03T06:45:39.545Z | fps:39.9 | update:0.00ms | render:5.80ms | loss:0.80ms | stroke:108.2 | ratio:0.439 | ink:0.1119 | maskedLoss:0.0658 | excess:53.278 | morphing:true
+2026-03-03T06:45:40.569Z | fps:40.0 | update:0.00ms | render:6.10ms | loss:0.50ms | stroke:108.2 | ratio:0.439 | ink:0.1119 | maskedLoss:0.0658 | excess:53.278 | morphing:true
+[target-loaded] mambo=1 fullMamboBlack=1116.0
+[init] field=60x27
+2026-03-03T06:45:50.524Z | fps:2.4 | update:0.00ms | render:3.60ms | loss:0.50ms | stroke:0.0 | ratio:0.000 | ink:0.0000 | maskedLoss:0.0000 | excess:0.000 | morphing:false
+[target-loaded] mambo=5 fullMamboBlack=977.6
+[init] field=120x54
+2026-03-03T06:45:52.274Z | fps:39.9 | update:0.00ms | render:10.50ms | loss:4.10ms | stroke:0.0 | ratio:0.000 | ink:0.0088 | maskedLoss:0.0050 | excess:32.139 | morphing:false
+[morph-start] ink=0.0108 mambo=5 initLoss=0.0065
+2026-03-03T06:45:53.275Z | fps:40.0 | update:0.00ms | render:7.30ms | loss:1.00ms | stroke:94.2 | ratio:0.096 | ink:0.0224 | maskedLoss:0.0273 | excess:88.340 | morphing:true
+2026-03-03T06:45:54.299Z | fps:40.0 | update:0.00ms | render:5.60ms | loss:1.80ms | stroke:129.1 | ratio:0.132 | ink:0.0313 | maskedLoss:0.0358 | excess:116.068 | morphing:true
+2026-03-03T06:45:55.300Z | fps:40.0 | update:0.00ms | render:5.80ms | loss:1.60ms | stroke:154.0 | ratio:0.158 | ink:0.0361 | maskedLoss:0.0421 | excess:136.406 | morphing:true
+2026-03-03T06:45:56.301Z | fps:40.0 | update:0.00ms | render:6.60ms | loss:1.00ms | stroke:219.0 | ratio:0.224 | ink:0.0549 | maskedLoss:0.0537 | excess:174.018 | morphing:true
+2026-03-03T06:45:57.325Z | fps:40.0 | update:0.00ms | render:6.50ms | loss:1.40ms | stroke:255.9 | ratio:0.262 | ink:0.0654 | maskedLoss:0.0575 | excess:186.197 | morphing:true
+2026-03-03T06:45:58.326Z | fps:40.0 | update:0.00ms | render:6.40ms | loss:1.40ms | stroke:360.8 | ratio:0.369 | ink:0.0870 | maskedLoss:0.0795 | excess:257.618 | morphing:true
+2026-03-03T06:45:59.327Z | fps:40.0 | update:0.00ms | render:7.00ms | loss:1.40ms | stroke:420.9 | ratio:0.431 | ink:0.0984 | maskedLoss:0.0892 | excess:288.918 | morphing:true
+2026-03-03T06:46:00.328Z | fps:40.0 | update:0.00ms | render:6.20ms | loss:2.00ms | stroke:465.7 | ratio:0.476 | ink:0.1082 | maskedLoss:0.0881 | excess:279.219 | morphing:true
+2026-03-03T06:46:01.352Z | fps:40.0 | update:0.00ms | render:9.00ms | loss:1.90ms | stroke:476.0 | ratio:0.487 | ink:0.1112 | maskedLoss:0.0911 | excess:295.240 | morphing:true
+2026-03-03T06:46:02.353Z | fps:40.0 | update:0.00ms | render:6.90ms | loss:1.00ms | stroke:487.9 | ratio:0.499 | ink:0.1167 | maskedLoss:0.0894 | excess:289.781 | morphing:true
+2026-03-03T06:46:03.353Z | fps:40.0 | update:0.00ms | render:7.90ms | loss:2.00ms | stroke:487.9 | ratio:0.499 | ink:0.1167 | maskedLoss:0.0894 | excess:289.781 | morphing:true
+2026-03-03T06:46:04.354Z | fps:40.0 | update:0.00ms | render:8.60ms | loss:2.00ms | stroke:482.7 | ratio:0.494 | ink:0.1167 | maskedLoss:0.0861 | excess:278.981 | morphing:true
+2026-03-03T06:46:05.379Z | fps:40.0 | update:0.00ms | render:9.00ms | loss:1.90ms | stroke:480.7 | ratio:0.492 | ink:0.1167 | maskedLoss:0.0838 | excess:271.597 | morphing:true
+2026-03-03T06:46:06.380Z | fps:40.0 | update:0.00ms | render:9.00ms | loss:1.60ms | stroke:480.7 | ratio:0.492 | ink:0.1167 | maskedLoss:0.0838 | excess:271.597 | morphing:true
+2026-03-03T06:46:07.404Z | fps:40.0 | update:0.00ms | render:7.70ms | loss:1.50ms | stroke:480.0 | ratio:0.491 | ink:0.1167 | maskedLoss:0.0820 | excess:265.787 | morphing:true
+2026-03-03T06:46:08.405Z | fps:40.0 | update:0.00ms | render:8.30ms | loss:1.40ms | stroke:479.1 | ratio:0.490 | ink:0.1167 | maskedLoss:0.0806 | excess:261.268 | morphing:true
+2026-03-03T06:46:09.405Z | fps:40.0 | update:0.00ms | render:7.30ms | loss:1.90ms | stroke:479.1 | ratio:0.490 | ink:0.1167 | maskedLoss:0.0806 | excess:261.268 | morphing:true
+2026-03-03T06:46:10.406Z | fps:40.0 | update:0.00ms | render:10.10ms | loss:2.00ms | stroke:478.7 | ratio:0.490 | ink:0.1167 | maskedLoss:0.0793 | excess:257.087 | morphing:true
+2026-03-03T06:46:11.431Z | fps:40.0 | update:0.00ms | render:8.20ms | loss:1.00ms | stroke:478.7 | ratio:0.490 | ink:0.1167 | maskedLoss:0.0793 | excess:257.087 | morphing:true
+2026-03-03T06:46:12.432Z | fps:40.0 | update:0.00ms | render:9.50ms | loss:2.20ms | stroke:478.2 | ratio:0.489 | ink:0.1167 | maskedLoss:0.0782 | excess:253.351 | morphing:true
+2026-03-03T06:46:13.432Z | fps:40.0 | update:0.00ms | render:8.40ms | loss:1.70ms | stroke:477.9 | ratio:0.489 | ink:0.1167 | maskedLoss:0.0773 | excess:250.419 | morphing:true
+2026-03-03T06:46:14.432Z | fps:40.0 | update:0.00ms | render:8.40ms | loss:2.10ms | stroke:477.9 | ratio:0.489 | ink:0.1167 | maskedLoss:0.0773 | excess:250.419 | morphing:true
+2026-03-03T06:46:15.433Z | fps:40.0 | update:0.00ms | render:8.90ms | loss:1.40ms | stroke:477.7 | ratio:0.489 | ink:0.1167 | maskedLoss:0.0764 | excess:247.442 | morphing:true
+2026-03-03T06:46:16.458Z | fps:40.0 | update:0.00ms | render:8.10ms | loss:2.20ms | stroke:477.4 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0756 | excess:244.845 | morphing:true
+2026-03-03T06:46:17.458Z | fps:40.0 | update:0.00ms | render:8.40ms | loss:1.70ms | stroke:477.4 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0756 | excess:244.845 | morphing:true
+2026-03-03T06:46:18.459Z | fps:40.0 | update:0.00ms | render:7.50ms | loss:1.90ms | stroke:477.2 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0747 | excess:242.115 | morphing:true
+2026-03-03T06:46:19.459Z | fps:40.0 | update:0.00ms | render:8.70ms | loss:2.40ms | stroke:477.2 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0747 | excess:242.115 | morphing:true
+2026-03-03T06:46:20.460Z | fps:40.0 | update:0.00ms | render:7.70ms | loss:1.10ms | stroke:477.0 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0741 | excess:240.016 | morphing:true
+2026-03-03T06:46:21.460Z | fps:40.0 | update:0.00ms | render:7.60ms | loss:2.30ms | stroke:477.0 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0735 | excess:238.183 | morphing:true
+2026-03-03T06:46:22.460Z | fps:40.0 | update:0.00ms | render:7.90ms | loss:1.10ms | stroke:477.0 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0735 | excess:238.183 | morphing:true
+2026-03-03T06:46:23.461Z | fps:40.0 | update:0.00ms | render:7.60ms | loss:2.00ms | stroke:476.8 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0729 | excess:236.281 | morphing:true
+2026-03-03T06:46:24.461Z | fps:40.0 | update:0.00ms | render:7.60ms | loss:1.20ms | stroke:476.8 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0724 | excess:234.497 | morphing:true
+2026-03-03T06:46:25.462Z | fps:40.0 | update:0.00ms | render:8.80ms | loss:1.40ms | stroke:476.8 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0724 | excess:234.497 | morphing:true
+2026-03-03T06:46:26.462Z | fps:40.0 | update:0.00ms | render:7.60ms | loss:1.60ms | stroke:476.6 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0719 | excess:232.808 | morphing:true
+2026-03-03T06:46:27.462Z | fps:40.0 | update:0.00ms | render:7.90ms | loss:1.50ms | stroke:476.6 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0719 | excess:232.808 | morphing:true
+2026-03-03T06:46:28.462Z | fps:40.0 | update:0.00ms | render:7.00ms | loss:1.60ms | stroke:476.6 | ratio:0.488 | ink:0.1167 | maskedLoss:0.0714 | excess:231.209 | morphing:true
+2026-03-03T06:46:29.463Z | fps:40.0 | update:0.00ms | render:8.30ms | loss:1.40ms | stroke:476.5 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0709 | excess:229.779 | morphing:true
+2026-03-03T06:46:30.464Z | fps:40.0 | update:0.00ms | render:8.10ms | loss:1.60ms | stroke:476.5 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0709 | excess:229.779 | morphing:true
+2026-03-03T06:46:31.464Z | fps:40.0 | update:0.00ms | render:7.50ms | loss:2.00ms | stroke:476.5 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0705 | excess:228.472 | morphing:true
+2026-03-03T06:46:32.465Z | fps:40.0 | update:0.00ms | render:8.00ms | loss:1.90ms | stroke:476.4 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0701 | excess:227.196 | morphing:true
+2026-03-03T06:46:33.489Z | fps:40.0 | update:0.00ms | render:7.60ms | loss:2.20ms | stroke:476.4 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0701 | excess:227.196 | morphing:true
+2026-03-03T06:46:34.490Z | fps:40.0 | update:0.00ms | render:8.60ms | loss:1.80ms | stroke:476.4 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0698 | excess:226.058 | morphing:true
+2026-03-03T06:46:35.674Z | fps:27.9 | update:0.00ms | render:4.90ms | loss:1.00ms | stroke:476.4 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0698 | excess:226.058 | morphing:true
+2026-03-03T06:46:36.691Z | fps:38.4 | update:0.00ms | render:6.10ms | loss:1.80ms | stroke:476.3 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0694 | excess:224.919 | morphing:true
+[step] moved=2441.1431 loss=0.0647 excess=209.552
+[step] moved=2280.1218 loss=0.0612 excess=198.233
+[step] moved=2156.3594 loss=0.0583 excess=188.913
+[step] moved=2046.9560 loss=0.0557 excess=180.489
+2026-03-03T06:46:37.716Z | fps:40.0 | update:0.00ms | render:7.00ms | loss:1.90ms | stroke:476.3 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0557 | excess:180.489 | morphing:true
+[step] moved=1958.3835 loss=0.0536 excess=173.563
+[step] moved=1880.5090 loss=0.0516 excess=167.292
+[step] moved=1809.3885 loss=0.0498 excess=161.487
+[step] moved=1744.2325 loss=0.0482 excess=156.177
+[step] moved=1683.9030 loss=0.0467 excess=151.188
+[step] moved=1628.4936 loss=0.0452 excess=146.602
+[step] moved=1578.3899 loss=0.0440 excess=142.642
+[step] moved=1534.4512 loss=0.0429 excess=139.017
+2026-03-03T06:46:38.717Z | fps:40.0 | update:0.00ms | render:7.30ms | loss:1.70ms | stroke:476.3 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0429 | excess:139.017 | morphing:true
+[step] moved=1493.2123 loss=0.0419 excess=135.679
+[step] moved=1456.5830 loss=0.0410 excess=132.762
+[step] moved=1422.9521 loss=0.0401 excess=129.993
+[step] moved=1391.2592 loss=0.0393 excess=127.434
+[step] moved=1361.8771 loss=0.0386 excess=124.964
+[step] moved=1331.3921 loss=0.0378 excess=122.397
+[step] moved=1303.5251 loss=0.0371 excess=120.057
+[step] moved=1277.2390 loss=0.0364 excess=117.918
+[step] moved=1252.5772 loss=0.0357 excess=115.829
+[step] moved=1228.5406 loss=0.0351 excess=113.811
+[step] moved=1205.8379 loss=0.0345 excess=111.928
+2026-03-03T06:46:39.742Z | fps:40.0 | update:0.00ms | render:7.30ms | loss:1.10ms | stroke:476.3 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0345 | excess:111.928 | morphing:true
+[step] moved=1184.5031 loss=0.0340 excess=110.140
+[step] moved=1164.1036 loss=0.0335 excess=108.416
+[step] moved=1144.6006 loss=0.0330 excess=106.775
+[step] moved=1125.6172 loss=0.0325 excess=105.158
+[step] moved=1107.2814 loss=0.0320 excess=103.598
+[step] moved=1089.7223 loss=0.0315 excess=102.135
+2026-03-03T06:46:40.743Z | fps:39.9 | update:0.00ms | render:7.50ms | loss:2.00ms | stroke:476.3 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0315 | excess:102.035 | morphing:true
+2026-03-03T06:46:43.002Z | fps:9.3 | update:0.00ms | render:4.20ms | loss:0.90ms | stroke:476.3 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0315 | excess:102.035 | morphing:true
+2026-03-03T06:47:18.049Z | fps:0.9 | update:0.00ms | render:5.60ms | loss:1.20ms | stroke:476.3 | ratio:0.487 | ink:0.1167 | maskedLoss:0.0315 | excess:102.035 | morphing:true
+2026-03-03T06:47:19.058Z | fps:40.7 | update:0.00ms | render:5.40ms | loss:1.60ms | stroke:479.4 | ratio:0.490 | ink:0.1168 | maskedLoss:0.0317 | excess:102.712 | morphing:true
+2026-03-03T06:47:20.082Z | fps:40.0 | update:0.00ms | render:5.80ms | loss:2.00ms | stroke:669.6 | ratio:0.685 | ink:0.1423 | maskedLoss:0.0675 | excess:218.846 | morphing:true
+2026-03-03T06:47:21.083Z | fps:40.0 | update:0.00ms | render:6.90ms | loss:1.30ms | stroke:739.4 | ratio:0.756 | ink:0.1546 | maskedLoss:0.0810 | excess:262.291 | morphing:true
+2026-03-03T06:47:22.083Z | fps:40.0 | update:0.00ms | render:6.60ms | loss:1.80ms | stroke:764.3 | ratio:0.782 | ink:0.1614 | maskedLoss:0.0843 | excess:273.034 | morphing:true
+2026-03-03T06:47:23.085Z | fps:39.9 | update:0.00ms | render:7.30ms | loss:1.20ms | stroke:875.1 | ratio:0.895 | ink:0.1684 | maskedLoss:0.0992 | excess:307.470 | morphing:true
+2026-03-03T06:47:24.108Z | fps:40.1 | update:0.00ms | render:7.30ms | loss:1.40ms | stroke:847.4 | ratio:0.867 | ink:0.1684 | maskedLoss:0.0980 | excess:317.395 | morphing:true
+2026-03-03T06:47:26.091Z | fps:2.0 | update:0.00ms | render:0.70ms | loss:0.00ms | stroke:847.4 | ratio:0.867 | ink:0.1684 | maskedLoss:0.0980 | excess:317.395 | morphing:true
+[target-loaded] mambo=4 fullMamboBlack=2581.5
+[init] field=120x54
+[morph-start] ink=0.0106 mambo=4 initLoss=0.0054
+2026-03-03T06:47:28.210Z | fps:41.9 | update:0.00ms | render:9.20ms | loss:5.80ms | stroke:122.4 | ratio:0.047 | ink:0.0309 | maskedLoss:0.0352 | excess:113.566 | morphing:true
+2026-03-03T06:47:29.211Z | fps:40.0 | update:0.00ms | render:7.30ms | loss:1.20ms | stroke:272.9 | ratio:0.106 | ink:0.0655 | maskedLoss:0.0726 | excess:230.723 | morphing:true
+2026-03-03T06:47:30.211Z | fps:40.0 | update:0.00ms | render:6.30ms | loss:1.30ms | stroke:318.0 | ratio:0.123 | ink:0.0810 | maskedLoss:0.0833 | excess:266.829 | morphing:true
+2026-03-03T06:47:31.212Z | fps:40.0 | update:0.00ms | render:6.50ms | loss:1.40ms | stroke:333.9 | ratio:0.129 | ink:0.0817 | maskedLoss:0.0870 | excess:281.717 | morphing:true
+2026-03-03T06:47:32.212Z | fps:40.0 | update:0.00ms | render:6.90ms | loss:0.80ms | stroke:390.3 | ratio:0.151 | ink:0.0930 | maskedLoss:0.0994 | excess:322.042 | morphing:true
+2026-03-03T06:47:33.212Z | fps:40.0 | update:0.00ms | render:7.40ms | loss:0.90ms | stroke:438.4 | ratio:0.170 | ink:0.1063 | maskedLoss:0.1088 | excess:352.360 | morphing:true
+2026-03-03T06:47:34.213Z | fps:40.0 | update:0.00ms | render:7.00ms | loss:1.30ms | stroke:483.8 | ratio:0.187 | ink:0.1083 | maskedLoss:0.1164 | excess:372.302 | morphing:true
+2026-03-03T06:47:35.214Z | fps:40.0 | update:0.00ms | render:7.60ms | loss:1.80ms | stroke:525.6 | ratio:0.204 | ink:0.1227 | maskedLoss:0.1265 | excess:409.774 | morphing:true
+2026-03-03T06:47:36.238Z | fps:40.0 | update:0.00ms | render:5.60ms | loss:1.40ms | stroke:577.6 | ratio:0.224 | ink:0.1378 | maskedLoss:0.1344 | excess:435.450 | morphing:true
+2026-03-03T06:47:37.239Z | fps:40.0 | update:0.00ms | render:5.70ms | loss:0.70ms | stroke:737.0 | ratio:0.285 | ink:0.1788 | maskedLoss:0.1590 | excess:515.022 | morphing:true
+2026-03-03T06:47:38.239Z | fps:40.0 | update:0.00ms | render:6.70ms | loss:1.20ms | stroke:736.5 | ratio:0.285 | ink:0.1788 | maskedLoss:0.1551 | excess:502.373 | morphing:true
+2026-03-03T06:47:39.239Z | fps:40.0 | update:0.00ms | render:7.70ms | loss:1.20ms | stroke:736.4 | ratio:0.285 | ink:0.1788 | maskedLoss:0.1520 | excess:492.469 | morphing:true
+2026-03-03T06:47:40.240Z | fps:40.0 | update:0.00ms | render:6.80ms | loss:1.20ms | stroke:736.3 | ratio:0.285 | ink:0.1788 | maskedLoss:0.1492 | excess:483.485 | morphing:true
+2026-03-03T06:48:46.049Z | fps:0.0 | update:0.00ms | render:0.20ms | loss:0.10ms | stroke:736.3 | ratio:0.285 | ink:0.1788 | maskedLoss:0.1492 | excess:483.485 | morphing:true
+2026-03-03T06:48:47.065Z | fps:40.4 | update:0.00ms | render:6.50ms | loss:1.40ms | stroke:759.9 | ratio:0.294 | ink:0.1805 | maskedLoss:0.1515 | excess:491.013 | morphing:true
+2026-03-03T06:48:48.066Z | fps:40.0 | update:0.00ms | render:6.00ms | loss:2.10ms | stroke:788.2 | ratio:0.305 | ink:0.1842 | maskedLoss:0.1556 | excess:504.058 | morphing:true
+2026-03-03T06:48:49.066Z | fps:40.0 | update:0.00ms | render:7.10ms | loss:0.90ms | stroke:798.4 | ratio:0.309 | ink:0.1852 | maskedLoss:0.1555 | excess:503.675 | morphing:true
+2026-03-03T06:48:50.066Z | fps:40.0 | update:0.00ms | render:5.50ms | loss:0.90ms | stroke:888.6 | ratio:0.344 | ink:0.2003 | maskedLoss:0.1721 | excess:557.675 | morphing:true
+2026-03-03T06:48:51.066Z | fps:40.0 | update:0.00ms | render:5.50ms | loss:1.10ms | stroke:1034.4 | ratio:0.401 | ink:0.2283 | maskedLoss:0.1973 | excess:639.345 | morphing:true
+2026-03-03T06:48:52.067Z | fps:40.0 | update:0.00ms | render:6.10ms | loss:0.90ms | stroke:1124.7 | ratio:0.436 | ink:0.2478 | maskedLoss:0.1994 | excess:646.210 | morphing:true
+2026-03-03T06:48:53.067Z | fps:40.0 | update:0.00ms | render:5.80ms | loss:1.10ms | stroke:1375.8 | ratio:0.533 | ink:0.3082 | maskedLoss:0.2262 | excess:732.865 | morphing:true
+2026-03-03T06:48:54.068Z | fps:40.0 | update:0.00ms | render:6.00ms | loss:1.00ms | stroke:1664.7 | ratio:0.645 | ink:0.3707 | maskedLoss:0.2375 | excess:769.591 | morphing:true
+2026-03-03T06:48:55.068Z | fps:40.0 | update:0.00ms | render:7.00ms | loss:1.10ms | stroke:1655.4 | ratio:0.641 | ink:0.3707 | maskedLoss:0.2280 | excess:738.590 | morphing:true
+2026-03-03T06:48:56.068Z | fps:40.0 | update:0.00ms | render:5.60ms | loss:1.00ms | stroke:1650.5 | ratio:0.639 | ink:0.3707 | maskedLoss:0.2220 | excess:719.138 | morphing:true
+2026-03-03T06:48:57.069Z | fps:39.9 | update:0.00ms | render:6.60ms | loss:1.30ms | stroke:1647.1 | ratio:0.638 | ink:0.3707 | maskedLoss:0.2173 | excess:704.061 | morphing:true
+2026-03-03T06:48:58.069Z | fps:40.0 | update:0.00ms | render:6.20ms | loss:1.00ms | stroke:1644.5 | ratio:0.637 | ink:0.3707 | maskedLoss:0.2132 | excess:690.646 | morphing:true
+2026-03-03T06:48:59.070Z | fps:40.0 | update:0.00ms | render:6.60ms | loss:1.40ms | stroke:1678.6 | ratio:0.650 | ink:0.3733 | maskedLoss:0.2149 | excess:696.406 | morphing:true
+2026-03-03T06:49:00.069Z | fps:40.0 | update:0.00ms | render:7.10ms | loss:1.50ms | stroke:1689.8 | ratio:0.655 | ink:0.3746 | maskedLoss:0.2138 | excess:692.781 | morphing:true
+2026-03-03T06:49:01.070Z | fps:40.0 | update:0.00ms | render:5.80ms | loss:1.10ms | stroke:1707.4 | ratio:0.661 | ink:0.3808 | maskedLoss:0.2137 | excess:692.456 | morphing:true
+2026-03-03T06:49:02.071Z | fps:40.0 | update:0.00ms | render:5.60ms | loss:1.60ms | stroke:1797.0 | ratio:0.696 | ink:0.4007 | maskedLoss:0.2239 | excess:725.540 | morphing:true
+2026-03-03T06:49:03.097Z | fps:39.9 | update:0.00ms | render:5.00ms | loss:1.90ms | stroke:1793.4 | ratio:0.695 | ink:0.4007 | maskedLoss:0.2204 | excess:713.905 | morphing:true
+2026-03-03T06:49:04.097Z | fps:40.0 | update:0.00ms | render:6.50ms | loss:1.50ms | stroke:1875.4 | ratio:0.726 | ink:0.4149 | maskedLoss:0.2298 | excess:744.024 | morphing:true
+2026-03-03T06:49:05.098Z | fps:40.0 | update:0.00ms | render:5.80ms | loss:1.50ms | stroke:1953.7 | ratio:0.757 | ink:0.4282 | maskedLoss:0.2379 | excess:769.436 | morphing:true
+2026-03-03T06:49:06.122Z | fps:40.0 | update:0.00ms | render:6.20ms | loss:1.00ms | stroke:1936.8 | ratio:0.750 | ink:0.4282 | maskedLoss:0.2335 | excess:756.574 | morphing:true
+2026-03-03T06:49:07.147Z | fps:40.0 | update:0.00ms | render:6.20ms | loss:0.80ms | stroke:2063.8 | ratio:0.799 | ink:0.4443 | maskedLoss:0.2487 | excess:805.778 | morphing:true
+2026-03-03T06:49:08.148Z | fps:40.0 | update:0.00ms | render:5.00ms | loss:0.60ms | stroke:2055.2 | ratio:0.796 | ink:0.4451 | maskedLoss:0.2431 | excess:787.784 | morphing:true
+2026-03-03T06:49:09.148Z | fps:40.0 | update:0.00ms | render:5.40ms | loss:1.20ms | stroke:2082.3 | ratio:0.807 | ink:0.4567 | maskedLoss:0.2371 | excess:768.337 | morphing:true
+2026-03-03T06:49:10.149Z | fps:40.0 | update:0.00ms | render:6.60ms | loss:1.40ms | stroke:2140.7 | ratio:0.829 | ink:0.4689 | maskedLoss:0.2383 | excess:772.050 | morphing:true
+2026-03-03T06:49:11.149Z | fps:40.0 | update:0.00ms | render:6.60ms | loss:2.00ms | stroke:2198.9 | ratio:0.852 | ink:0.4846 | maskedLoss:0.2328 | excess:754.428 | morphing:true
+2026-03-03T06:49:12.176Z | fps:40.0 | update:0.00ms | render:6.20ms | loss:0.90ms | stroke:2263.3 | ratio:0.877 | ink:0.5037 | maskedLoss:0.2214 | excess:717.377 | morphing:true
+2026-03-03T06:49:13.201Z | fps:40.0 | update:0.00ms | render:6.90ms | loss:1.30ms | stroke:2351.1 | ratio:0.911 | ink:0.5251 | maskedLoss:0.2048 | excess:663.349 | morphing:true
+[step] moved=7054.0543 loss=0.1955 excess=632.754
+2026-03-03T06:49:14.202Z | fps:40.0 | update:0.00ms | render:6.60ms | loss:1.00ms | stroke:2346.2 | ratio:0.909 | ink:0.5251 | maskedLoss:0.1951 | excess:631.848 | morphing:true
+[step] moved=6793.0646 loss=0.1895 excess=613.384
+[step] moved=6638.3025 loss=0.1858 excess=601.603
+2026-03-03T06:49:15.202Z | fps:40.0 | update:0.00ms | render:5.50ms | loss:2.20ms | stroke:2339.4 | ratio:0.906 | ink:0.5251 | maskedLoss:0.1856 | excess:601.032 | morphing:true
+[step] moved=6500.6942 loss=0.1826 excess=591.035
+[step] moved=6369.3553 loss=0.1795 excess=581.153
+[step] moved=6259.0990 loss=0.1769 excess=572.630
+[step] moved=6157.8449 loss=0.1745 excess=564.809
+[step] moved=6069.9443 loss=0.1723 excess=557.932
+2026-03-03T06:49:16.202Z | fps:40.0 | update:0.00ms | render:6.20ms | loss:1.50ms | stroke:2329.6 | ratio:0.902 | ink:0.5251 | maskedLoss:0.1722 | excess:557.666 | morphing:true
+[step] moved=5981.7191 loss=0.1702 excess=551.043
+[step] moved=5904.2408 loss=0.1683 excess=545.092
+2026-03-03T06:49:17.202Z | fps:40.0 | update:0.00ms | render:6.40ms | loss:1.30ms | stroke:2324.9 | ratio:0.901 | ink:0.5251 | maskedLoss:0.1674 | excess:542.286 | morphing:true
+[step] moved=5798.3902 loss=0.1658 excess=536.763
+[step] moved=5721.5548 loss=0.1638 excess=530.472
+[step] moved=5657.4296 loss=0.1623 excess=525.468
+[step] moved=5592.9548 loss=0.1606 excess=520.228
+[step] moved=5527.1697 loss=0.1590 excess=514.833
+[step] moved=5476.0308 loss=0.1577 excess=510.658
+2026-03-03T06:49:18.203Z | fps:40.0 | update:0.00ms | render:6.20ms | loss:1.50ms | stroke:2319.3 | ratio:0.898 | ink:0.5251 | maskedLoss:0.1576 | excess:510.505 | morphing:true
+[step] moved=5422.9181 loss=0.1563 excess=506.369
+[step] moved=5371.6270 loss=0.1550 excess=502.067
+[step] moved=5322.3942 loss=0.1538 excess=498.059
+[step] moved=5272.0766 loss=0.1525 excess=493.913
+[step] moved=5226.6300 loss=0.1513 excess=490.008
+[step] moved=5182.5408 loss=0.1502 excess=486.390
+[step] moved=5136.9773 loss=0.1490 excess=482.610
+[step] moved=5098.4228 loss=0.1480 excess=479.320
+[step] moved=5057.4924 loss=0.1469 excess=475.777
+2026-03-03T06:49:19.228Z | fps:40.0 | update:0.00ms | render:6.80ms | loss:1.30ms | stroke:2314.9 | ratio:0.897 | ink:0.5251 | maskedLoss:0.1468 | excess:475.735 | morphing:true
+[step] moved=5015.0124 loss=0.1458 excess=472.194
+[step] moved=4978.8256 loss=0.1448 excess=469.102
+[step] moved=4938.9220 loss=0.1438 excess=465.742
+[step] moved=4905.0347 loss=0.1429 excess=462.820
+[step] moved=4866.9382 loss=0.1419 excess=459.586
+[step] moved=4834.6222 loss=0.1410 excess=456.831
+[step] moved=4798.6838 loss=0.1401 excess=453.734
+[step] moved=4765.5109 loss=0.1392 excess=450.942
+[step] moved=4733.0336 loss=0.1383 excess=448.104
+[step] moved=4701.5721 loss=0.1375 excess=445.448
+2026-03-03T06:49:20.228Z | fps:40.0 | update:0.00ms | render:5.80ms | loss:1.30ms | stroke:2312.5 | ratio:0.896 | ink:0.5251 | maskedLoss:0.1375 | excess:445.512 | morphing:true
+[step] moved=4670.4150 loss=0.1366 excess=442.686
+[step] moved=4639.5415 loss=0.1358 excess=439.989
+[step] moved=4609.3380 loss=0.1350 excess=437.416
+[step] moved=4580.2825 loss=0.1342 excess=434.885
+[step] moved=4551.2652 loss=0.1335 excess=432.334
+[step] moved=4522.7810 loss=0.1327 excess=429.889
+[step] moved=4494.9290 loss=0.1319 excess=427.467
+[step] moved=4467.5661 loss=0.1312 excess=425.114
+[step] moved=4440.3052 loss=0.1305 excess=422.667
+[step] moved=4413.4209 loss=0.1297 excess=420.365
+2026-03-03T06:49:21.252Z | fps:40.0 | update:0.00ms | render:6.30ms | loss:0.50ms | stroke:2311.2 | ratio:0.895 | ink:0.5251 | maskedLoss:0.1298 | excess:420.400 | morphing:true
+[step] moved=4387.1462 loss=0.1290 excess=418.017
+[step] moved=4361.5441 loss=0.1284 excess=415.851
+[step] moved=4336.5575 loss=0.1277 excess=413.593
+[step] moved=4312.9077 loss=0.1270 excess=411.548
+[step] moved=4288.1898 loss=0.1264 excess=409.417
+[step] moved=4263.7184 loss=0.1257 excess=407.262
+[step] moved=4239.3781 loss=0.1250 excess=405.130
+[step] moved=4215.2388 loss=0.1244 excess=403.000
+[step] moved=4191.2718 loss=0.1237 excess=400.861
+[step] moved=4167.5548 loss=0.1231 excess=398.774
+[step] moved=4144.1146 loss=0.1224 excess=396.680
+2026-03-03T06:49:22.253Z | fps:40.0 | update:0.00ms | render:6.20ms | loss:1.90ms | stroke:2310.5 | ratio:0.895 | ink:0.5251 | maskedLoss:0.1224 | excess:396.696 | morphing:true
+[step] moved=4121.3323 loss=0.1218 excess=394.713
+[step] moved=4100.2746 loss=0.1213 excess=392.952
+[step] moved=4079.0965 loss=0.1207 excess=391.157
+[step] moved=4058.1129 loss=0.1202 excess=389.315
+[step] moved=4036.9788 loss=0.1196 excess=387.441
+[step] moved=4015.8119 loss=0.1190 excess=385.563
+[step] moved=3994.8196 loss=0.1184 excess=383.737
+[step] moved=3974.1214 loss=0.1179 excess=381.883
+[step] moved=3953.4172 loss=0.1173 excess=380.057
+[step] moved=3934.1303 loss=0.1168 excess=378.343
+[step] moved=3913.9400 loss=0.1162 excess=376.540
+2026-03-03T06:49:23.253Z | fps:40.0 | update:0.00ms | render:7.00ms | loss:1.00ms | stroke:2310.4 | ratio:0.895 | ink:0.5251 | maskedLoss:0.1162 | excess:376.448 | morphing:true
+[step] moved=3894.0685 loss=0.1157 excess=374.826
+[step] moved=3874.5091 loss=0.1152 excess=373.104
+[step] moved=3855.2947 loss=0.1146 excess=371.465
+[step] moved=3836.3295 loss=0.1141 excess=369.788
+[step] moved=3817.3945 loss=0.1136 excess=368.109
+[step] moved=3798.6570 loss=0.1131 excess=366.452
+[step] moved=3780.0539 loss=0.1126 excess=364.801
+[step] moved=3761.6988 loss=0.1121 excess=363.190
+[step] moved=3744.5345 loss=0.1116 excess=361.661
+[step] moved=3726.4086 loss=0.1111 excess=360.055
+[step] moved=3708.5193 loss=0.1106 excess=358.504
+2026-03-03T06:49:24.254Z | fps:40.0 | update:0.00ms | render:7.10ms | loss:1.60ms | stroke:2310.4 | ratio:0.895 | ink:0.5251 | maskedLoss:0.1106 | excess:358.409 | morphing:true
+[step] moved=3691.0652 loss=0.1102 excess=356.988
+[step] moved=3673.8379 loss=0.1097 excess=355.459
+[step] moved=3656.5543 loss=0.1092 excess=353.923
+[step] moved=3639.4586 loss=0.1088 excess=352.439
+[step] moved=3622.6228 loss=0.1083 excess=350.935
+[step] moved=3605.7181 loss=0.1079 excess=349.439
+[step] moved=3589.1831 loss=0.1074 excess=347.987
+[step] moved=3572.9458 loss=0.1070 excess=346.559
+[step] moved=3556.8122 loss=0.1065 excess=345.117
+2026-03-03T06:49:25.255Z | fps:40.0 | update:0.00ms | render:6.60ms | loss:1.30ms | stroke:2310.4 | ratio:0.895 | ink:0.5251 | maskedLoss:0.1065 | excess:344.947 | morphing:true
+[step] moved=3539.6947 loss=0.1061 excess=343.611
+[step] moved=3521.9615 loss=0.1056 excess=342.061
+[step] moved=3504.4891 loss=0.1051 excess=340.532
+[step] moved=3488.1791 loss=0.1047 excess=339.097
+[step] moved=3471.9866 loss=0.1042 excess=337.654
+2026-03-03T06:49:26.280Z | fps:40.0 | update:0.00ms | render:6.70ms | loss:1.80ms | stroke:2310.4 | ratio:0.895 | ink:0.5251 | maskedLoss:0.1042 | excess:337.654 | morphing:true
+2026-03-03T06:49:27.280Z | fps:40.0 | update:0.00ms | render:6.90ms | loss:1.40ms | stroke:2310.4 | ratio:0.895 | ink:0.5251 | maskedLoss:0.1040 | excess:336.859 | morphing:true
+2026-03-03T06:49:28.852Z | fps:25.4 | update:0.00ms | render:7.40ms | loss:1.00ms | stroke:2310.4 | ratio:0.895 | ink:0.5251 | maskedLoss:0.1037 | excess:336.069 | morphing:true
