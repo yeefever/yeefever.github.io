@@ -66,8 +66,8 @@ export default function MamboCanvas() {
 
     // ── Countdown timer state ──────────────────────────────────────────────
     // Random 30–60 s drawing window before mamboification begins.
-    const TIMER_MIN_MS = 1_000;
-    const TIMER_MAX_MS = 2_000;
+    const TIMER_MIN_MS = 45_000;
+    const TIMER_MAX_MS = 60_000;
     let timerEndMs    = 0;   // absolute timestamp when the timer fires
     let timerFired    = false;
 
@@ -154,7 +154,7 @@ export default function MamboCanvas() {
           ` | excess:${lastTotalExcess.toFixed(3)}` +
           ` | morphing:${morphing}`
         );
-        flushLog();
+        //flushLog();
         frameCounter = 0;
         fpsTimer     = now;
         timeUpdate = timeRender = timeLoss = 0;
