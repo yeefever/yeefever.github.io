@@ -19,8 +19,8 @@ const brushStrength = 0.15;
 const lossThreshold   = 0.01;
 const minInk          = 0.01;   // fraction of field that must be inked before morph starts
 const transportRate       = 0.8;  // fraction of excess pushed per iteration
-const FRAMES_PER_STEP     = 4;   // ← tune: run 1 transport iteration every N rendered frames
-const DEBUG_SOLVER_STEPS  = 16;   // iterations per Step button click
+const FRAMES_PER_STEP     = 4;    // ← tune: run 1 transport iteration every N rendered frames
+const PYRAMID_LEVELS      = 4;    // coarse-to-fine levels (0 = coarsest, 3 = finest)
 const MAX_SPAWNED         = 5;
 
 const DEBUG = true; // set false to disable profiling overhead
@@ -38,8 +38,7 @@ export default function MamboCanvas() {
   const canvasRef    = useRef(null);
   const containerRef = useRef(null);
   const statusRef    = useRef(null);
-  const stepBtnRef   = useRef(null);
-  const solveBtnRef  = useRef(null);
+  const timerRef     = useRef(null);
 
   useEffect(() => {
     const canvas    = canvasRef.current;
@@ -65,8 +64,19 @@ export default function MamboCanvas() {
     let cycleStartMs = performance.now();
     const spawned = [];
 
+    // ── Countdown timer state ──────────────────────────────────────────────
+    // Random 30–60 s drawing window before mamboification begins.
+    const TIMER_MIN_MS = 1_000;
+    const TIMER_MAX_MS = 2_000;
+    let timerEndMs    = 0;   // absolute timestamp when the timer fires
+    let timerFired    = false;
+
     // ── Transport state ────────────────────────────────────────────────────
-    let fullMamboAmount   = 0;     // sum(targetField) — computed once per target load
+    let fullMamboAmount   = 0;     // sum(1-targetField) for finest level — black mass
+    let targetPyramid     = [];    // [coarsest … finest] full-res Float32Arrays
+    let currentLevel      = 0;     // which pyramid level is currently driving transport
+    let levelStartLoss    = 1;     // maskedLoss when we entered the current level
+    let levelFrameCount   = 0;     // frames spent at the current level
     let autoPropagate     = true;  // set false to freeze solver; Step/Solve buttons still work
     let stepFrameClock    = 0;     // counts frames since last transport step
     let morphing          = false;
@@ -78,8 +88,26 @@ export default function MamboCanvas() {
     let lastStrokeAmount  = 0;
     let lastRatio         = 0;
 
+    // Returns aggressiveness of mass transfer; high at coarse levels, tapers to fine.
+    // Rate: 2.0 → 0.7 → 0.245 → 0.086  (steep exponential falloff)
+    function getTransportRate() {
+      return 2.0 * Math.pow(0.35, currentLevel);
+    }
+
+    // Iters per trigger: 64 → 16 → 8 → 4
+    function getTransportIters() {
+      return [28, 26, 20, 16][Math.min(currentLevel, 3)];
+    }
+
+    // Coarse levels trigger transport every rendered frame; fine levels respect FRAMES_PER_STEP.
+    function getFramesPerStep() {
+      return Math.max(1, FRAMES_PER_STEP - (PYRAMID_LEVELS - 1 - currentLevel));
+      // level 0 → 1 (every frame), 1 → 2, 2 → 3, 3 → FRAMES_PER_STEP
+    }
+
     // ── Input state ────────────────────────────────────────────────────────
     let pointerDown = false, lastPointer = null;
+    let brushRadius = brushRadiusPx;  // mutable; adjusted by scroll/pinch
 
     // ── Profiler state ─────────────────────────────────────────────────────
     let frameCounter = 0;
@@ -174,24 +202,58 @@ export default function MamboCanvas() {
       }
     }
 
-    // ── Target image ───────────────────────────────────────────────────────
+    // ── Target image + coarse-to-fine pyramid ─────────────────────────────
     function setTargetFromImage(img) {
-      if (!targetCtx) return;
-      targetCtx.clearRect(0, 0, fieldWidth, fieldHeight);
-      targetCtx.drawImage(img, 0, 0, fieldWidth, fieldHeight);
-      const data = targetCtx.getImageData(0, 0, fieldWidth, fieldHeight).data;
-      fullMamboAmount = 0;
-      for (let i = 0; i < size; i++) {
-        const o = i * 4;
-        targetField[i] = (data[o] + data[o + 1] + data[o + 2]) / (3 * 255);
-        fullMamboAmount += 1 - targetField[i];   // BLACK units: dark pixels = ink
+      targetPyramid = [];
+      currentLevel  = 0;
+
+      for (let level = 0; level < PYRAMID_LEVELS; level++) {
+        // Level 0 = coarsest (2^(L-1) downscale), level L-1 = full resolution.
+        const ls = 1 / Math.pow(2, PYRAMID_LEVELS - 1 - level);
+        const pw = Math.max(1, Math.round(fieldWidth  * ls));
+        const ph = Math.max(1, Math.round(fieldHeight * ls));
+
+        const sc   = document.createElement('canvas');
+        sc.width   = pw;
+        sc.height  = ph;
+        const sctx = sc.getContext('2d');
+        sctx.drawImage(img, 0, 0, pw, ph);
+        const sdata = sctx.getImageData(0, 0, pw, ph).data;
+
+        // Read grayscale at small resolution.
+        const small = new Float32Array(pw * ph);
+        for (let i = 0; i < pw * ph; i++) {
+          const o = i * 4;
+          small[i] = (sdata[o] + sdata[o + 1] + sdata[o + 2]) / (3 * 255);
+        }
+
+        // Upsample back to full field resolution (nearest-neighbour).
+        const full = new Float32Array(size);
+        for (let y = 0; y < fieldHeight; y++) {
+          for (let x = 0; x < fieldWidth; x++) {
+            const sx = Math.min(pw - 1, Math.floor(x * pw / fieldWidth));
+            const sy = Math.min(ph - 1, Math.floor(y * ph / fieldHeight));
+            full[y * fieldWidth + x] = small[sy * pw + sx];
+          }
+        }
+
+        targetPyramid.push(full);
       }
-      logLine(`[target-loaded] mambo=${currentMamboIndex} fullMamboBlack=${fullMamboAmount.toFixed(1)}`);
+
+      // Keep targetField as the finest level for backward-compat.
+      targetField.set(targetPyramid[PYRAMID_LEVELS - 1]);
+
+      // fullMamboAmount always uses finest-level black mass.
+      fullMamboAmount = 0;
+      for (let i = 0; i < size; i++) fullMamboAmount += 1 - targetField[i];
+
+      logLine(`[target-loaded] mambo=${currentMamboIndex} fullMamboBlack=${fullMamboAmount.toFixed(1)} levels=${PYRAMID_LEVELS}`);
     }
 
     // ── Physics: black-mass-conserving local transport ─────────────────────
 
     // Recomputes strokeAmount, ratio, and desired[] from current paintField.
+    // Uses the current pyramid level as the transport target.
     function prepareDesired() {
       let strokeAmount = 0;
       for (let i = 0; i < size; i++) strokeAmount += 1 - paintField[i];
@@ -200,8 +262,9 @@ export default function MamboCanvas() {
       const ratio = strokeAmount / (fullMamboAmount + 1e-8);
       lastRatio = ratio;
 
+      const target = targetPyramid[currentLevel] ?? targetField;
       for (let i = 0; i < size; i++) {
-        desired[i] = Math.min(1, (1 - targetField[i]) * ratio);
+        desired[i] = Math.min(1, (1 - target[i]) * ratio);
       }
     }
 
@@ -244,7 +307,7 @@ export default function MamboCanvas() {
         if (sumW < 1e-12) continue;
 
         // Amount to try to move this iter from this cell
-        let give = ei * transportRate;
+        let give = ei * getTransportRate();
 
         // Distribute proportionally by weights
         const transfers = [
@@ -457,7 +520,7 @@ export default function MamboCanvas() {
 
     // ── Input handlers ─────────────────────────────────────────────────────
     function applyBrush(x, y) {
-      const radius = (brushRadiusPx * DPR) / RES_SCALE;
+      const radius = (brushRadius * DPR) / RES_SCALE;
       const r2 = radius * radius;
       const minX = Math.max(0, Math.floor(x - radius));
       const maxX = Math.min(fieldWidth  - 1, Math.ceil(x + radius));
@@ -496,7 +559,7 @@ export default function MamboCanvas() {
       if (!lastPointer) { lastPointer = pos; applyBrush(pos.x, pos.y); return; }
       const dx   = pos.x - lastPointer.x, dy = pos.y - lastPointer.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
-      const step = (brushRadiusPx * DPR) / RES_SCALE / 3;
+      const step = (brushRadius * DPR) / RES_SCALE / 3;
       if (dist === 0 || step <= 0) {
         applyBrush(pos.x, pos.y);
       } else {
@@ -511,16 +574,29 @@ export default function MamboCanvas() {
 
     function handlePointerUp() { pointerDown = false; lastPointer = null; }
 
+    function startTimer() {
+      const duration = TIMER_MIN_MS + Math.random() * (TIMER_MAX_MS - TIMER_MIN_MS);
+      timerEndMs  = performance.now() + duration;
+      timerFired  = false;
+      const timerEl = timerRef.current;
+      if (timerEl) timerEl.style.opacity = '1';
+      logLine(`[timer-start] duration=${(duration / 1000).toFixed(1)}s`);
+    }
+
     // ── Cycle reset ────────────────────────────────────────────────────────
     function resetFields() {
       paintField.fill(1);
       inkMask.fill(0);
       morphing               = false;
       stepFrameClock         = 0;
+      currentLevel           = 0;
+      levelStartLoss         = 1;
+      levelFrameCount        = 0;
       hasStabilizedThisCycle = false;
       cycleStartMs           = performance.now();
       currentMamboIndex      = Math.floor(Math.random() * mamboImages.length);
       setTargetFromImage(mamboImages[currentMamboIndex]);
+      startTimer();
       if (statusEl) {
         statusEl.textContent   = 'Draw…';
         statusEl.style.opacity = '1';
@@ -543,14 +619,41 @@ export default function MamboCanvas() {
         prepareDesired();
         if (autoPropagate) {
           stepFrameClock++;
-          if (stepFrameClock >= FRAMES_PER_STEP) {
+          if (stepFrameClock >= getFramesPerStep()) {
             stepFrameClock = 0;
-            runTransportIters(1);
+            runTransportIters(getTransportIters());
           }
         }
       }
 
       render();
+
+      // ── Countdown display ────────────────────────────────────────────────
+      const timerEl = timerRef.current;
+      if (timerEl && !timerFired) {
+        const remaining = Math.max(0, timerEndMs - now);
+        const secs = Math.ceil(remaining / 1000);
+        timerEl.textContent = secs > 0 ? secs : '';
+
+        // Sample paintField under the timer element; switch to white when ≥50% is black.
+        const canvasRect = canvas.getBoundingClientRect();
+        const timerRect  = timerEl.getBoundingClientRect();
+        const x1 = Math.max(0, Math.floor((timerRect.left   - canvasRect.left) / canvasRect.width  * fieldWidth));
+        const x2 = Math.min(fieldWidth,  Math.ceil((timerRect.right  - canvasRect.left) / canvasRect.width  * fieldWidth));
+        const y1 = Math.max(0, Math.floor((timerRect.top    - canvasRect.top)  / canvasRect.height * fieldHeight));
+        const y2 = Math.min(fieldHeight, Math.ceil((timerRect.bottom - canvasRect.top)  / canvasRect.height * fieldHeight));
+        let blackPixels = 0, total = 0;
+        for (let fy = y1; fy < y2; fy++) {
+          for (let fx = x1; fx < x2; fx++) {
+            if (1 - paintField[fy * fieldWidth + fx] > 0.5) blackPixels++;
+            total++;
+          }
+        }
+        const darkFrac = total > 0 ? blackPixels / total : 0;
+        timerEl.style.color = darkFrac >= 0.5
+          ? 'rgba(255,255,255,0.6)'
+          : 'rgba(40,40,50,0.18)';
+      }
 
       if (!hasStabilizedThisCycle) {
         const { maskedLoss, inkAmount, totalExcess } = computeLossAndInk();
@@ -558,12 +661,33 @@ export default function MamboCanvas() {
         lastMaskedLoss  = maskedLoss;
         lastTotalExcess = totalExcess;
 
-        // Transition from drawing to morphing once minimum ink threshold is met
-        if (!morphing && inkAmount >= minInk) {
+        // Fire morphing when countdown reaches zero (needs at least some ink).
+        if (!morphing && !timerFired && now >= timerEndMs && inkAmount >= minInk) {
+          timerFired        = true;
           morphing          = true;
           morphStartMs      = performance.now();
           initialMaskedLoss = maskedLoss;
-          logLine(`[morph-start] ink=${inkAmount.toFixed(4)} mambo=${currentMamboIndex} initLoss=${initialMaskedLoss.toFixed(4)}`);
+          levelStartLoss    = maskedLoss;
+          levelFrameCount   = 0;
+          if (timerEl) timerEl.textContent = '';
+          logLine(`[morph-start] ink=${inkAmount.toFixed(4)} mambo=${currentMamboIndex} initLoss=${initialMaskedLoss.toFixed(4)} level=${currentLevel}`);
+        }
+
+        // Advance to a finer pyramid level when:
+        //   (a) loss has dropped to 15% of what it was when we entered this level, OR
+        //   (b) we've spent too long at this level (budget exceeded).
+        if (morphing && currentLevel < PYRAMID_LEVELS - 1) {
+          levelFrameCount++;
+          const relConverged    = maskedLoss < levelStartLoss * 0.15;
+          const budgetExceeded  = levelFrameCount > 90;   // ~1.5 s at 60 fps
+          if (relConverged || budgetExceeded) {
+            currentLevel++;
+            levelStartLoss  = maskedLoss;
+            levelFrameCount = 0;
+            stepFrameClock  = 0;
+            console.log(`[pyramid] → level ${currentLevel} loss=${maskedLoss.toFixed(4)}`);
+            logLine(`[pyramid-advance] level=${currentLevel} loss=${maskedLoss.toFixed(4)}`);
+          }
         }
 
         // Stabilization: inked region has converged to target
@@ -595,60 +719,19 @@ export default function MamboCanvas() {
       canvas.addEventListener('pointercancel', handlePointerUp);
       canvas.addEventListener('pointerleave', handlePointerUp);
 
-      const solveBtn = solveBtnRef.current;
-      if (solveBtn) {
-        solveBtn.addEventListener('click', () => {
-          // Compute black mass and ratio from current paint.
-          let strokeAmount = 0;
-          for (let i = 0; i < size; i++) strokeAmount += 1 - paintField[i];
-          const ratio = strokeAmount / (fullMamboAmount + 1e-8);
-          lastStrokeAmount = strokeAmount;
-          lastRatio        = ratio;
-
-          // Directly assign exact equilibrium — no transport.
-          for (let i = 0; i < size; i++) {
-            const desiredBlack = (1 - targetField[i]) * ratio;
-            paintField[i] = 1 - Math.max(0, Math.min(1, desiredBlack));
-          }
-
-          // Recompute desired[] so loss is meaningful.
-          for (let i = 0; i < size; i++) {
-            desired[i] = Math.min(1, (1 - targetField[i]) * ratio);
-          }
-
-          render();
-
-          const { maskedLoss, totalExcess } = computeLossAndInk();
-          lastMaskedLoss  = maskedLoss;
-          lastTotalExcess = totalExcess;
-          console.log('[solve] ratio:', ratio.toFixed(4), 'loss:', maskedLoss.toFixed(6), 'excess:', totalExcess.toFixed(3));
-          logLine(`[solve] ratio:${ratio.toFixed(4)} loss:${maskedLoss.toFixed(6)} excess:${totalExcess.toFixed(3)}`);
-          flushLog();
-        });
+      function handleWheel(e) {
+        e.preventDefault();
+        // Pinch-to-zoom on trackpad sends ctrlKey=true with large deltaY values;
+        // regular scroll sends small deltaY. Both feel natural with the same factor.
+        const factor = e.deltaY < 0 ? 1.08 : 1 / 1.08;
+        brushRadius = Math.max(8, Math.min(200, brushRadius * factor));
       }
-
-      const stepBtn = stepBtnRef.current;
-      if (stepBtn) {
-        stepBtn.addEventListener('click', () => {
-  if (!morphing) return;
-
-  prepareDesired();
-  const moved = runTransportIters(DEBUG_SOLVER_STEPS);
-  render();
-
-  const { maskedLoss, totalExcess } = computeLossAndInk();
-  lastMaskedLoss  = maskedLoss;
-  lastTotalExcess = totalExcess;
-
-  console.log(`[step] moved=${moved.toFixed(4)} loss=${maskedLoss.toFixed(4)} excess=${totalExcess.toFixed(3)}`);
-  logLine(`[step] moved=${moved.toFixed(4)} loss=${maskedLoss.toFixed(4)} excess=${totalExcess.toFixed(3)}`);
-  flushLog();
-});
-      }
+      canvas.addEventListener('wheel', handleWheel, { passive: false });
 
       loadMambos().then(() => {
         lastTime  = performance.now();
         fpsTimer  = performance.now();
+        startTimer();
         logLine(`[init] field=${fieldWidth}x${fieldHeight}`);
         rafHandle = requestAnimationFrame(loop);
       });
@@ -665,6 +748,7 @@ export default function MamboCanvas() {
       canvas.removeEventListener('pointerup',    handlePointerUp);
       canvas.removeEventListener('pointercancel', handlePointerUp);
       canvas.removeEventListener('pointerleave', handlePointerUp);
+      canvas.removeEventListener('wheel', handleWheel);
       flushLog();
     };
   }, []);
@@ -718,46 +802,23 @@ export default function MamboCanvas() {
         >
           Draw…
         </div>
-        <button
-          ref={stepBtnRef}
+        <div
+          ref={timerRef}
           style={{
             position: 'absolute',
-            top: 12,
-            left: 12,
-            padding: '4px 12px',
-            fontSize: 11,
-            letterSpacing: '0.06em',
-            fontFamily: 'inherit',
-            background: 'rgba(0,0,0,0.08)',
-            border: '1px solid rgba(0,0,0,0.2)',
-            color: 'rgba(0,0,0,0.55)',
-            borderRadius: 4,
-            cursor: 'pointer',
+            top: 20,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            fontSize: 48,
+            fontVariantNumeric: 'tabular-nums',
+            fontWeight: 300,
+            letterSpacing: '-0.02em',
+            color: 'rgba(40,40,50,0.18)',
+            pointerEvents: 'none',
+            transition: 'opacity 0.6s ease',
             userSelect: 'none',
           }}
-        >
-          Step ×4
-        </button>
-        <button
-          ref={solveBtnRef}
-          style={{
-            position: 'absolute',
-            top: 12,
-            left: 88,
-            padding: '4px 12px',
-            fontSize: 11,
-            letterSpacing: '0.06em',
-            fontFamily: 'inherit',
-            background: 'rgba(0,0,0,0.08)',
-            border: '1px solid rgba(0,0,0,0.2)',
-            color: 'rgba(0,0,0,0.55)',
-            borderRadius: 4,
-            cursor: 'pointer',
-            userSelect: 'none',
-          }}
-        >
-          Solve
-        </button>
+        />
       </div>
     </>
   );
